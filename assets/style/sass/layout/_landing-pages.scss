@@ -77,8 +77,12 @@
 ------------------------------------------------------------*/ 
 .debit-card-box {
     box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.25);
-    padding: 30px 100px 30px 30px;
-    margin-right: 100px;
+    padding: 30px 30px 30px 30px;
+    
+    @include mix.xl {
+        padding: 30px 100px 30px 30px;
+        margin-right: 100px;
+    }
 }
 /*----------------------------------------------------------
 3. Debit Card Page End 
@@ -91,24 +95,42 @@
 #immediate-access {
     background-color: rgba(20, 37, 24, 1);
     color: rgb(255, 255, 255);
+    padding: 30px 0px;
 }
 
 #bg-form-immediate {
     background-image: url('../../img/bg-immediate.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: auto;
     width: 100%;
+    margin: 80px 0px 50px 0px;
+}
+
+.text-immediate {
+    font-weight: 700;
+    @include mix.text-gradient();
+}
+
+.text-form-info {
+    color: white;
+    font-family: 12px;
+    
+    span {
+        &:nth-child(3) {
+            color: var.$text-primary-light-cayman;
+        }
+    }
 }
 
 .in-getouch {
     background-color: transparent;
     border: 1px solid rgba(224, 224, 224, 1);
     padding: 15px 100px 15px 20px;
-    width: 100%;
+    width: 95%;
     color: rgb(255, 255, 255);
-
 }
+
 /*----------------------------------------------------------
 4. Immediate Access Page End 
 ------------------------------------------------------------*/ 

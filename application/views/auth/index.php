@@ -11,10 +11,8 @@
             <ul class="navbar-nav d-flex align-items-center justify-content-end">
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <!-- <span class="me-2"> -->
-                            Bank
-                            <i class="fa-solid fa-angle-down ms-2"></i>
-                        <!-- </span> -->
+                        Bank
+                        <i class="fa-solid fa-angle-down ms-2"></i>
                     </a>
                     <ul class="dropdown-menu position-absolute">
                         <li><a class="dropdown-item" href="#">Encrypted Bank Account</a></li>
@@ -24,10 +22,8 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <!-- <span class="me-2"> -->
-                            Crypto
-                            <i class="fa-solid fa-angle-down ms-2"></i>
-                        <!-- </span> -->
+                        Crypto
+                        <i class="fa-solid fa-angle-down ms-2"></i>
                     </a>
                     <ul class="dropdown-menu position-absolute">
                         <li><a class="dropdown-item" href="#">Non Custodial Wallet</a></li>
@@ -37,10 +33,8 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <!-- <span class="me-2"> -->
-                            Financial
-                            <i class="fa-solid fa-angle-down ms-2"></i>
-                        <!-- </span> -->
+                        Financial
+                        <i class="fa-solid fa-angle-down ms-2"></i>
                     </a>
                     <ul class="dropdown-menu position-absolute">
                         <li><a class="dropdown-item" href="#">Incorporation of Offshore Companies</a></li>
@@ -50,24 +44,18 @@
                 </li>
                 <li class="nav-item me-2">
                     <a class="nav-link" aria-current="page" href="#">
-                        <!-- <span> -->
-                            Download
-                        <!-- </span> -->
+                        Download
                     </a>
                 </li>
                 <li class="nav-item me-3">
                     <a class="nav-link" href="#">
-                        <!-- <span> -->
-                            Work with us
-                        <!-- </span>     -->
+                        Work with us
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="" href="#">
-                        <button class="btn btn-primary-cayman">
-                            <!-- <span> -->
-                                Online Banking
-                            <!-- </span>     -->
+                        <button class="btn btn-primary-cayman my-3 my-lg-0">
+                            Online Banking
                         </button>
                     </a>
                 </li>
@@ -85,11 +73,11 @@
         <img src="<?= base_url()?>assets/img/banner.webp" width="100%" class="pt-5 d-none d-md-block" alt="banner img">
         <img src="<?= base_url()?>assets/img/banner-m.webp" width="100%" class="pt-5 d-block d-md-none" alt="banner img">
         <div class="container col-12 col-lg-6 mx-auto my-5">
-            <h1 class="text-center fw-normal fst-italic py-4">
+            <h2 class="text-center fw-normal fst-italic py-4">
                 “ We provide financial solutions in <br>
                 an international scenario, <br>
                 we are the financial advisors that you can trust ’’
-            </h1>
+            </h2>
         </div>
     </section>
     <!-- End Banner -->
@@ -190,21 +178,31 @@
     <section id="debit-card" class="wrapper my-5 py-5">
         <div class="container mt-5">
             <div class="row">
-                <div class="col-7">
-                    <h1 class="fw-bold">Debit card on VISA circuit</h1>
-                    <h4 class="fw-semibold pb-5">manage confidentially your purchases</h4>
-                    <div class="mt-5 debit-card-box">
+                <div class="col-12 order-2 col-lg-7 order-lg-1">
+                    <h1 class="fw-bold">Debit card on 
+                            <span>
+                                <svg width="88" height="31" viewBox="0 0 88 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M62.3333 7.53194L63.2645 1.29147C61.2293 0.52658 59.0938 0.118166 56.9392 0.0817232C53.4558 0.127226 45.2024 1.87775 45.2939 9.87215C45.38 17.3917 55.0885 17.3583 55.1337 21.3049C55.1789 25.2515 46.4658 24.6568 43.5601 22.2346L42.5887 28.7481C45.1115 29.8534 47.8196 30.3801 50.5409 30.2947C55.3297 30.2322 62.5254 27.46 62.442 20.174C62.3554 12.6077 52.5533 12.0273 52.5157 8.74235C52.4781 5.45741 59.3126 5.78076 62.3333 7.53194Z" fill="black"/>
+                                    <path d="M80.5651 29.3949L87.0127 29.3107L81.0613 0.286668L75.4143 0.360433C74.7301 0.312678 74.0496 0.501601 73.4718 0.89976C72.8939 1.29792 72.4487 1.88458 72.2009 2.57453L62.0374 29.6369L69.3576 29.5413L70.7505 25.2022L79.6935 25.0854L80.5651 29.3949ZM72.7232 19.2051L76.291 8.25893L78.4856 19.1298L72.7232 19.2051Z" fill="black"/>
+                                    <path d="M25.0237 1.02102L18.5601 21.1217L17.7174 16.8196L15.209 3.74176C15.209 3.74176 14.8908 1.15339 11.8474 1.19314L0.784113 1.33766L0.659912 1.82976C3.25772 2.49781 5.74624 3.58889 8.03991 5.0655L14.4307 30.2612L21.7437 30.1656L32.5747 0.922389L25.0237 1.02102Z" fill="black"/>
+                                    <path d="M38.2821 29.9491L31.2648 30.0408L35.3166 0.886081L42.3339 0.794416L38.2821 29.9491Z" fill="black"/>
+                                </svg>
+                            </span> 
+                        circuit
+                    </h1>
+                    <h4 class="fw-semibold pb-3 pb-lg-5">manage confidentially your purchases</h4>
+                    <div class=" debit-card-box">
                         <p>Cayman Financial Institute provides debit cards, VIRTUAL AND PHYSICAL, to the clients in order to protect the privacy of their worldwide purchases.</p>
                     </div>
-                    <div class="mt-5 ms-5">
+                    <div class="mt-3 mt-lg-5 ms-3 ms-lg-5">
                         <a href="" class="text-success">
                             <i class="fa-solid fa-circle-arrow-right"></i>
                             See more
                         </a>
                     </div>
                 </div>
-                <div class="col-5">
-                    <img class="img-fluid" src="<?= base_url()?>assets/img/img-1.webp" alt="visa card">
+                <div class="col-12 order-1 col-lg-5 order-lg-2">
+                    <img class="img-fluid d-block mx-auto" src="<?= base_url()?>assets/img/img-1.webp" alt="visa card">
                 </div>
             </div>
         </div>
@@ -214,28 +212,38 @@
     <!-- Start Immediate Access -->
     <section id="immediate-access" class="wrapper mt-5 pt-5">
         <div class="container">
-            <h2 class="text-center">Immediate Access</h2>
-            <p class="text-center">Menage your money and your crypto from our Online banking 24 hours a day 7 days a week</p>
+            <h1 class="text-center text-immediate f-jakarta">Immediate Access</h1>
+            <p class="text-center text-immediate f-jakarta">Menage your money and your crypto from our Online banking 24 hours a day 7 days a week</p>
             <div id="bg-form-immediate" class="row">
-                <div class="col-6">
-                    <div class="p-5">
-                        <img class="img-fluid" src="<?= base_url()?>assets/img/img-2.webp" alt="form img">
+                <div class="col-12 col-lg-6">
+                    <div class="p-0 pt-5  p-lg-5">
+                        <img class="img-fluid d-block mx-auto" src="<?= base_url()?>assets/img/img-2.webp" alt="form img">
                     </div>
-                    Email
+                    <span class="p-5 d-flex align-items-center">
+                        <div>
+                            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.95455 0.625V2.59624L0.75 6.63565V23.375H25.5682V6.63565L19.3636 2.59624V0.625H6.95455ZM9.02273 2.69318H17.2955V10.6428L13.1591 13.3249L9.02273 10.6428V2.69318ZM10.0568 4.76136V6.82955H16.2614V4.76136H10.0568ZM6.95455 5.0522V9.28551L3.6907 7.18501L6.95455 5.0522ZM19.3636 5.0522L22.6275 7.18501L19.3636 9.28551V5.0522ZM10.0568 7.86364V9.93182H16.2614V7.86364H10.0568ZM2.81818 9.09162L13.1591 15.7809L23.5 9.09162V21.3068H2.81818V9.09162Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="ms-4 text-form-info">
+                            <span>EMAIL</span><br>
+                            <span>info@CAIMAN</span>
+                        </div>
+                    </span>
                 </div>
-                <div class="col-6">
-                    <h1>Get In Touch</h1>
+                <div class="col-12 col-lg-6">
+                    <h1 class="f-jakarta fw-bold">Get In Touch</h1>
                     <form method="">
                         <div class="mb-4">
-                            <input class="in-getouch" placeholder="Name *" type="text">
+                            <input class="in-getouch d-block mx-auto d-lg-inline mx-lg-0" placeholder="Name *" type="text">
                         </div>
                         <div class="mb-4">
-                            <input class="in-getouch" placeholder="Email" type="text">
+                            <input class="in-getouch d-block mx-auto d-lg-inline mx-lg-0" placeholder="Email" type="text">
                         </div>
                         <div class="mb-4">
-                            <input class="in-getouch" placeholder="Phone number *" type="number">
+                            <input class="in-getouch d-block mx-auto d-lg-inline mx-lg-0" placeholder="Phone number *" type="number">
                         </div>
-                        <button>SEND</button>
+                        <button class="btn-in-getouch fw-bold f-montserrat mb-5 mb-lg-0 d-block mx-auto mx-lg-0">SEND</button>
                     </form>
                 </div>
             </div>
@@ -247,7 +255,45 @@
 <!-- END MAIN CONTENT -->
 
 <!-- START FOOTER -->
-<footer id="contactus" class="footer p-0 p-r">
+<footer id="footer" class="footer py-5">
+    <div class="container">
+        <div class="row d-flex flex-column-reverse flex-xl-row footer-wrap align-items-center ">
+            <div class="col-10 mx-auto col-xl-4 footer-location py-3">
+                <ul>
+                    <li>
+                        <a href="">Registered Office of Incorporation, USA Delaware</a>
+                    </li>
+                    <li>
+                        <a href="">Operational Headquarters, Grand Cayman</a>
+                    </li>
+                    <li>
+                        <a href="">Administrative Headquarters, Singapore</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-10 mx-auto col-xl-4 py-3">
+                <a href="" class="w-100">
+                    <img class="d-block mx-auto img-fluid" src="<?= base_url()?>assets/img/logo-footer.webp" alt="logo footer">
+                </a>
+            </div>
+            <div class="col-10 mx-auto col-xl-3 footer-nav py-3">
+                <ul>
+                    <li>
+                        <a href="">About us</a>
+                    </li>
+                    <li>
+                        <a href="">Our mission</a>
+                    </li>
+                    <li>
+                        <a href="">Our team</a>
+                    </li>
+                    <li>
+                        <a href="">Privacy policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </footer>
 <!-- END FOOTER -->
 

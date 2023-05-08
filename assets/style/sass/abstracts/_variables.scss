@@ -21,11 +21,11 @@
 ------------------------------------------------------------*/ 
 $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 $f-inter: 'Inter', sans-serif !default;
+$f-jakarta: 'Plus Jakarta Sans', sans-serif !default;
+$f-montserrat: 'Montserrat', sans-serif !default;
 /*----------------------------------------------------------
 1. Font Family End
 ------------------------------------------------------------*/ 
-
-
 
 
 
@@ -34,6 +34,7 @@ $f-inter: 'Inter', sans-serif !default;
 2. Color text Start
 ------------------------------------------------------------*/ 
 $text-primary-cayman: rgba(0, 0, 0, 0.46) !default;
+$text-primary-light-cayman: rgba(132, 255, 159, 1);
 $text-secondary-cayman: rgb(223, 223, 223) !default;
 $text-navbar-cayman: rgba(80, 80, 80) !default;
 /*----------------------------------------------------------
@@ -49,11 +50,6 @@ $bg-secondary-cayman: rgba(238, 238, 238);
 /*----------------------------------------------------------
 3. Color background End
 ------------------------------------------------------------*/ 
-
-
-
-
-
 
 
 

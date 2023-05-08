@@ -25,16 +25,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 24px ;
     @include mix.lg{
-        font-size: 34px;
+        font-size: 45px;
     }
 }
 
 h2 {
     font-size: 20px;
     @include mix.lg{
-        font-size: 28px;
+        font-size: 40px;
     }
 }
 
@@ -67,11 +67,13 @@ h6 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 15px;
     @include mix.lg{
         font-size: 18px;
     }
 }
+
+
 /*----------------------------------------------------------
 1. Tags Typography End
 ------------------------------------------------------------*/ 
@@ -81,6 +83,12 @@ p {
 ------------------------------------------------------------*/ 
 .f-inter {
     font-family: var.$f-inter;
+}
+.f-jakarta {
+    font-family: var.$f-jakarta;
+}
+.f-montserrat {
+    font-family: var.$f-montserrat;
 }
 /*----------------------------------------------------------
 2. Class Font End

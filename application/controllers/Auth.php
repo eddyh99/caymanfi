@@ -19,7 +19,7 @@ class Auth extends CI_Controller
 	public function index()
 	{
 		$data	= array(
-            'title'		 => NAMETITLE . ' - Project',
+            'title'		 => NAMETITLE . ' - Financial Group',
             'content'	 => 'auth/index',
 		);
 
