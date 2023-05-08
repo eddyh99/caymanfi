@@ -1,0 +1,37 @@
+/*----------------------------------------------------------
+    File Name  : _navbar.scss
+    Desc       : File ini merupakan styling untuk 
+                 Component Button yang akan dipakai berulang
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Buttons Landing Page
+ *
+ */
+
+ @use '../abstracts/variables' as var;
+
+
+ /*----------------------------------------------------------
+1. Buttons Landing page Start 
+------------------------------------------------------------*/ 
+.btn-primary-cayman {
+    color: var.$text-secondary-cayman;
+    background-color: var.$bg-primary-cayman;
+    
+    &:hover {
+        color: var.$text-secondary-cayman;
+    }
+}
+
+
+ /*----------------------------------------------------------
+1. Buttons Landing page End 
+------------------------------------------------------------*/ 
+
+
+
+

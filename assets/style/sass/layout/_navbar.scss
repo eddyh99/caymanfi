@@ -1,0 +1,71 @@
+/*----------------------------------------------------------
+    File Name  : _navbar.scss
+    Desc       : File ini merupakan styling untuk navbar Landing Page
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Navbar Landing Page
+ *
+ */
+
+
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+
+/*----------------------------------------------------------
+1. Navbar Landing Page Start
+------------------------------------------------------------*/ 
+.navbar {
+    padding: 5px 0px;
+
+    @include mix.xl2{
+        padding: 20px 0px;
+    }
+}
+
+.nav-item {
+    .nav-link {
+        
+        color: var.$text-navbar-cayman;
+        margin-left: 20px;
+        &:hover{
+            color: var.$text-navbar-cayman;
+        }
+        &::after{
+            content: '';
+            display: block;
+            padding-bottom: 0.1rem;
+            border-bottom: 2px solid green;
+            transform: scaleX(0);
+            transition: 0.2s linear;
+        }
+        &:hover::after, &:focus::after{
+            transform: scaleX(1);
+        }
+        &:active, &:focus{
+            color: var.$text-navbar-cayman;
+        }
+    
+    }
+
+    .dropdown-menu[data-bs-popper] {
+        top: 100%;
+        left: -80px;
+        margin-top: 0.125rem;
+        @include mix.md{
+            left: 0px  ;
+        }
+    }
+
+}
+
+/*----------------------------------------------------------
+1. Navbar Landing Page End
+------------------------------------------------------------*/ 
+
+
+

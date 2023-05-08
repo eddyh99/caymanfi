@@ -1,0 +1,114 @@
+/*----------------------------------------------------------
+    File Name  : _navbar.scss
+    Desc       : File ini merupakan styling untuk Landing Page
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Banner Landing Page
+ * 2. Card Landing Page
+ * 3. Debit Card Page
+ * 4. Immediate Access Page
+ *
+ */
+
+
+ @use '../abstracts/variables' as var;
+ @use '../abstracts/mixins' as mix;
+ 
+/*----------------------------------------------------------
+1. Banner Landing Page Start
+------------------------------------------------------------*/ 
+
+// #banner-landing{
+//     background-image: url('../../img/banner.webp');
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     height: 500px;
+//     width: 100%;
+
+// }
+ 
+/*----------------------------------------------------------
+1. Banner Landing Page End
+------------------------------------------------------------*/ 
+
+
+/*----------------------------------------------------------
+2. Card Landing Page Start 
+------------------------------------------------------------*/ 
+#card-landing {
+    background-color: var.$bg-secondary-cayman;
+}
+
+.card {
+    border-radius: 16px;
+}
+
+.card-landing {
+    border-radius: 16px;
+    
+    .card-landing-one & {
+        background-color: rgba(70, 158, 100, 1);
+    }
+    .card-landing-two & {
+        background-color: rgba(105, 194, 91, 1);
+    }
+    .card-landing-three & {
+        background-color: rgba(154, 224, 148, 1);
+    }
+
+
+    div {
+        top: -50px;
+    }
+
+    @include mix.flex-atas-bawah();
+}
+/*----------------------------------------------------------
+2. Card Landing Page End 
+------------------------------------------------------------*/ 
+
+/*----------------------------------------------------------
+3. Debit Card Page Start 
+------------------------------------------------------------*/ 
+.debit-card-box {
+    box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.25);
+    padding: 30px 100px 30px 30px;
+    margin-right: 100px;
+}
+/*----------------------------------------------------------
+3. Debit Card Page End 
+------------------------------------------------------------*/ 
+
+
+/*----------------------------------------------------------
+4. Immediate Access Page Start 
+------------------------------------------------------------*/ 
+#immediate-access {
+    background-color: rgba(20, 37, 24, 1);
+    color: rgb(255, 255, 255);
+}
+
+#bg-form-immediate {
+    background-image: url('../../img/bg-immediate.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+
+.in-getouch {
+    background-color: transparent;
+    border: 1px solid rgba(224, 224, 224, 1);
+    padding: 15px 100px 15px 20px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+
+}
+/*----------------------------------------------------------
+4. Immediate Access Page End 
+------------------------------------------------------------*/ 

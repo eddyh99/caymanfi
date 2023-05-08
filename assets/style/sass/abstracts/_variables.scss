@@ -1,0 +1,80 @@
+/*----------------------------------------------------------
+    File Name  : _variables.scss
+    Desc       : File ini merupakan file untuk membuat variable CSS 
+                 yang nanti akan digunakan secara berulang-ulang
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Font Family
+ * 2. Color Text
+ * 3. Color Background
+ * 4. Media Query
+ *
+ */
+
+
+/*----------------------------------------------------------
+1. Font Family Start
+------------------------------------------------------------*/ 
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$f-inter: 'Inter', sans-serif !default;
+/*----------------------------------------------------------
+1. Font Family End
+------------------------------------------------------------*/ 
+
+
+
+
+
+
+/*----------------------------------------------------------
+2. Color text Start
+------------------------------------------------------------*/ 
+$text-primary-cayman: rgba(0, 0, 0, 0.46) !default;
+$text-secondary-cayman: rgb(223, 223, 223) !default;
+$text-navbar-cayman: rgba(80, 80, 80) !default;
+/*----------------------------------------------------------
+2. Color Text End
+------------------------------------------------------------*/ 
+
+
+/*----------------------------------------------------------
+3. Color background Start
+------------------------------------------------------------*/ 
+$bg-primary-cayman: rgba(31, 86, 43);
+$bg-secondary-cayman: rgba(238, 238, 238);
+/*----------------------------------------------------------
+3. Color background End
+------------------------------------------------------------*/ 
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------
+4. Breakpoints Start
+------------------------------------------------------------*/ 
+$screen-sm-min: 375px;
+$screen-md-min: 577px;
+$screen-lg-min: 769px;
+$screen-xl-min: 993px;
+$screen-xl2-min: 1025px;
+$screen-xl3-min: 1201px;
+
+$screen-sm-max: 576px;
+$screen-md-max: 768px;
+$screen-lg-max: 992px;
+$screen-xl-max: 1024px;
+$screen-xl2-max: 1200px;
+$screen-xl3-max: 1400px;
+
+/*----------------------------------------------------------
+4. Breakpoints End
+------------------------------------------------------------*/ 
+
