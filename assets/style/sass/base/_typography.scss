@@ -39,9 +39,9 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 26px;
     @include mix.lg{
-        font-size: 26px;
+        font-size: 35px;
     }
 }
 
@@ -54,6 +54,7 @@ h4 {
 
 h5 {
     font-size: 20px;
+    line-height: 160%;
     @include mix.lg{
         font-size: 22px;
     }

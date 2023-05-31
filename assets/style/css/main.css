@@ -12630,11 +12630,11 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 26px;
 }
 @media (min-width: 768px) {
   h3 {
-    font-size: 26px;
+    font-size: 35px;
   }
 }
 
@@ -12649,6 +12649,7 @@ h4 {
 
 h5 {
   font-size: 20px;
+  line-height: 160%;
 }
 @media (min-width: 768px) {
   h5 {
@@ -12722,14 +12723,17 @@ p {
   color: rgb(80, 80, 80);
   margin-left: 20px;
 }
+.nav-item .nav-link.aktif {
+  color: rgb(61, 157, 61);
+}
 .nav-item .nav-link:hover {
-  color: rgb(80, 80, 80);
+  color: rgb(61, 157, 61);
 }
 .nav-item .nav-link::after {
   content: "";
   display: block;
   padding-bottom: 0.1rem;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid rgb(61, 157, 61);
   transform: scaleX(0);
   transition: 0.2s linear;
 }
@@ -12743,6 +12747,9 @@ p {
   top: 100%;
   left: -80px;
   margin-top: 0.125rem;
+}
+.nav-item .dropdown-menu[data-bs-popper] li .dropdown-item:visited {
+  background-color: rgb(238, 238, 238);
 }
 @media (min-width: 768px) {
   .nav-item .dropdown-menu[data-bs-popper] {
@@ -12793,7 +12800,7 @@ p {
 }
 .footer-wrap .footer-nav ul li {
   margin-bottom: 1rem;
-  text-align: center;
+  text-align: start;
 }
 .footer-wrap .footer-nav ul li a {
   text-decoration: underline;
@@ -12803,7 +12810,7 @@ p {
 1. Footer Landing Page End
 ------------------------------------------------------------*/
 /*----------------------------------------------------------
-    File Name  : _navbar.scss
+    File Name  : _landing-pages.scss
     Desc       : File ini merupakan styling untuk Landing Page
 
 ------------------------------------------------------------*/
@@ -12814,6 +12821,9 @@ p {
  * 2. Card Landing Page
  * 3. Debit Card Page
  * 4. Immediate Access Page
+ *
+ * * * * * * * * * * * * * * * 
+ * 5. Link 
  *
  */
 /*----------------------------------------------------------
@@ -12831,26 +12841,75 @@ p {
 
 .card {
   border-radius: 16px;
+  border: none !important;
+  background-color: transparent;
 }
 
 .card-landing {
   border-radius: 16px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border: none !important;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.card-landing-one .card-landing {
+.card-landing:hover {
+  border: none !important;
+  transform: rotateY(180deg);
+}
+.card-landing .flip-card-front,
+.card-landing .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: none !important;
+  border-radius: 16px;
+}
+.card-landing .flip-card-front {
   background-color: rgb(70, 158, 100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-landing .flip-card-front div {
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card-landing .flip-card-back {
+  background-color: rgb(255, 255, 255);
+  transform: rotateY(180deg);
+  border: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-landing .flip-card-back div ul li {
+  background: url("../../img/line.png") no-repeat left 1px;
+  background-size: 10px !important;
+  padding: 0 0 0 1rem;
+  margin: 0;
+  margin-left: 10px;
+  margin-bottom: 1rem;
+  list-style: none;
+  line-height: 30px;
+}
+.card-landing .flip-card-back div ul li a:hover {
+  color: rgb(54, 170, 44);
 }
 .card-landing-two .card-landing {
   background-color: rgb(105, 194, 91);
 }
 .card-landing-three .card-landing {
   background-color: rgb(154, 224, 148);
-}
-.card-landing div {
-  top: -50px;
 }
 
 /*----------------------------------------------------------
@@ -12906,6 +12965,84 @@ p {
   color: rgb(132, 255, 159);
 }
 
+.radio-getouch {
+  background-color: transparent;
+  border: 1px solid rgb(224, 224, 224);
+  padding: 15px 15px 15px 20px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+@media (min-width: 992px) {
+  .radio-getouch {
+    width: 95%;
+  }
+}
+.radio-getouch div {
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .radio-getouch div {
+    flex-direction: row;
+  }
+}
+@media (min-width: 992px) {
+  .radio-getouch div {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) {
+  .radio-getouch div {
+    flex-direction: row;
+  }
+}
+.radio-getouch div .in-radio-getouch {
+  background-color: transparent;
+  border: 1px solid rgb(224, 224, 224);
+  padding: 15px 100px 15px 20px;
+  width: 25%;
+  color: rgb(255, 255, 255);
+}
+
+.b-telp {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .b-telp {
+    width: 95%;
+  }
+}
+.b-telp .in-telp {
+  color: rgba(0, 0, 0, 0.46);
+}
+.b-telp .in-telp .nohp-select {
+  width: 100%;
+  height: 60px;
+  font-weight: 600;
+  color: rgb(224, 224, 224);
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+}
+.b-telp .in-telp .nohp-select::placeholder {
+  color: rgb(255, 255, 255);
+}
+.b-telp .in-telp input-nohp {
+  color: #949494;
+  font-weight: 400 !important;
+  width: 100%;
+}
+
+.date-getouch {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .date-getouch {
+    width: 95%;
+  }
+}
+.date-getouch input {
+  width: 45%;
+}
+
 .in-getouch {
   background-color: transparent;
   border: 1px solid rgb(224, 224, 224);
@@ -12916,6 +13053,150 @@ p {
 
 /*----------------------------------------------------------
 4. Immediate Access Page End 
+------------------------------------------------------------*/
+/*----------------------------------------------------------
+5. Link Start 
+------------------------------------------------------------*/
+#banner-landing .container {
+  height: 900px;
+}
+@media (min-width: 768px) {
+  #banner-landing .container {
+    height: 950px;
+  }
+}
+@media (min-width: 992px) {
+  #banner-landing .container {
+    height: 350px;
+  }
+}
+
+.bank-banner {
+  position: relative;
+}
+.bank-banner h1 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.see-more-bank {
+  position: relative;
+  top: -35px;
+  border-radius: 10px;
+}
+
+.card-bank-wrap {
+  position: relative;
+  top: -220px;
+}
+@media (min-width: 768px) {
+  .card-bank-wrap {
+    top: -165px;
+  }
+}
+@media (min-width: 992px) {
+  .card-bank-wrap {
+    top: -250px;
+  }
+}
+.card-bank-wrap .card-bank-landing-one {
+  background-color: rgb(240, 240, 240);
+  color: rgb(0, 0, 0);
+  width: auto;
+  height: 18rem;
+  transition: all 0.4s ease;
+}
+.card-bank-wrap .card-bank-landing-one.aktif {
+  background-color: rgb(6, 99, 60);
+  color: rgb(255, 255, 255);
+}
+.card-bank-wrap .card-bank-landing-one:hover {
+  background-color: rgb(6, 99, 60);
+  color: rgb(255, 255, 255);
+}
+@media (min-width: 992px) {
+  .card-bank-wrap .card-bank-landing-one {
+    width: 18rem;
+    height: 24rem;
+  }
+}
+@media (min-width: 1200px) {
+  .card-bank-wrap .card-bank-landing-one {
+    width: 22rem;
+  }
+}
+@media (min-width: 1400px) {
+  .card-bank-wrap .card-bank-landing-one {
+    width: 24rem;
+  }
+}
+.card-bank-wrap .card-bank-landing-one .card-bank-landing {
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.ency-bank-box {
+  box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 20px 20px 20px 20px;
+  margin: 10px 10px 10px 10px;
+}
+@media (min-width: 992px) {
+  .ency-bank-box {
+    padding: 20px 40px 10px 20px;
+    margin: 10px 0px 10px 20px;
+  }
+}
+
+.bank-checked ul li {
+  background: url("../../img/checked-maker.png") no-repeat left 3px;
+  background-size: 25px !important;
+  padding: 0 0 0 2rem;
+  margin: 0;
+  margin-left: 30px;
+  margin-bottom: 1rem;
+  list-style: none;
+  color: #757575;
+  line-height: 30px;
+}
+
+.b-workus {
+  width: auto;
+  height: 180px;
+  border: 2px solid rgb(195, 206, 226);
+  margin: 5px 0px;
+  padding: 30px 30px 30px 30px;
+  border-radius: 6px;
+}
+.b-workus p {
+  cursor: default;
+}
+
+.b-workus:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.card-price {
+  width: auto;
+  height: 600px;
+  box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.25), 1px 1px 4px rgba(0, 0, 0, 0.25);
+  margin: 5px 10px;
+  padding: 30px 30px 30px 30px;
+  border-radius: 12px;
+}
+@media (min-width: 992px) {
+  .card-price {
+    padding: 30px 30px 30px 30px;
+    margin: 5px 10px;
+  }
+}
+
+/*----------------------------------------------------------
+5. Link End 
 ------------------------------------------------------------*/
 /*----------------------------------------------------------
     File Name  : _navbar.scss
@@ -12956,6 +13237,66 @@ p {
   display: none;
 }
 
+/*----------------------------------------------------------
+    File Name  : _colors.scss
+    Desc       : File ini merupakan styling untuk 
+                 Color yang dapat dipanggil secara berulang
+
+------------------------------------------------------------*/
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Text Color
+ * 2. Background Color
+ *
+ */
+/*----------------------------------------------------------
+1. Text Color Start 
+------------------------------------------------------------*/
+.text-primary-cayman {
+  color: rgba(0, 0, 0, 0.46);
+}
+
+.text-primary-light-cayman {
+  color: rgb(132, 255, 159);
+}
+
+.text-secondary-cayman {
+  color: rgb(223, 223, 223);
+}
+
+.text-color-link {
+  color: rgb(117, 117, 117);
+}
+
+.text-navbar-cayman {
+  color: rgb(80, 80, 80);
+}
+
+.text-color-link-grad {
+  background: -webkit-linear-gradient(rgb(54, 170, 44), rgb(18, 97, 35));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*----------------------------------------------------------
+1. Text Color End
+------------------------------------------------------------*/
+/*----------------------------------------------------------
+2. Background Color Start
+------------------------------------------------------------*/
+.bg-primary-cayman {
+  background-color: rgb(31, 86, 43);
+}
+
+.bg-secondary-cayman {
+  background-color: rgb(238, 238, 238);
+}
+
+/*----------------------------------------------------------
+2. Background Color End
+------------------------------------------------------------*/
 /*----------------------------------------------------------
     File Name  : main.scss
     Desc       : File ini merupakan file utama yang akan dicompile

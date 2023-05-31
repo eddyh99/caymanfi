@@ -26,8 +26,10 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <!-- Vendor CSS Files -->
-    <!-- <link href="<?= base_url() ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="<?= base_url()?>assets/vendor/jquery/jquery.css" rel="stylesheet" />
+    <link href="<?= base_url() ?>assets/vendor/intl-tel-input-master/build/css/intlTelInput.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
 
     <!-- Icon Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

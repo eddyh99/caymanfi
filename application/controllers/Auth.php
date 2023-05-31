@@ -19,8 +19,11 @@ class Auth extends CI_Controller
 	public function index()
 	{
 		$data	= array(
-            'title'		 => NAMETITLE . ' - Financial Group',
-            'content'	 => 'auth/index',
+            'title'		 	=> NAMETITLE . ' - Financial Group',
+            'content'	 	=> 'auth/index',
+			'navbar'	 	=> 'tamplate/navbar-landing',
+			'footerlanding'	=> 'tamplate/footer-landing',
+			'extra'		 	=> 'auth/js/js_index',
 		);
 
 		$this->load->view('tamplate/wrapper', $data);

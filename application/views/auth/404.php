@@ -4,7 +4,7 @@
             <div class="col-10 col-sm-9 col-md-7 col-lg-5 box-form d-flex flex-column">
                 <div class="col-12 text-center mt-auto mb-3">
                     <a href="<?= base_url() ?>">
-                        <img src="<?= base_url(); ?>assets/img/speedybank/logo.png" alt="logo">
+                        <img src="<?= base_url(); ?>assets/img/logo-only.webp" alt="logo">
                     </a>
                 </div>
                 <div class="col-12 text-center mb-auto">

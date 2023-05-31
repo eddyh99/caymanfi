@@ -29,17 +29,21 @@
 
 .nav-item {
     .nav-link {
-        
         color: var.$text-navbar-cayman;
         margin-left: 20px;
+        
+        &.aktif{
+            color: rgb(61, 157, 61);
+        }
+
         &:hover{
-            color: var.$text-navbar-cayman;
+            color: rgb(61, 157, 61);;
         }
         &::after{
             content: '';
             display: block;
             padding-bottom: 0.1rem;
-            border-bottom: 2px solid green;
+            border-bottom: 2px solid rgb(61, 157, 61);
             transform: scaleX(0);
             transition: 0.2s linear;
         }
@@ -56,6 +60,15 @@
         top: 100%;
         left: -80px;
         margin-top: 0.125rem;
+
+        li {
+            .dropdown-item {
+                &:visited {
+                    background-color: var.$bg-secondary-cayman;
+                }
+            }
+        }
+
         @include mix.md{
             left: 0px  ;
         }
