@@ -116,6 +116,41 @@ class Link extends CI_Controller
 		$this->load->view('tamplate/wrapper', $data);
 	}
 
+	public function about_us()
+	{
+		$data	= array(
+            'title'		 	=> NAMETITLE . ' - Financial Group',
+            'content'	 	=> 'auth/landingpage/about_us',
+            'navbar'    	=> 'tamplate/navbar-landing',
+			'footerlanding'	=> 'tamplate/footer-landing',
+			'extra'		 	=> 'auth/js/js_index',
+		);
+
+		$this->load->view('tamplate/wrapper', $data);
+	}
+
+	public function privacy_police()
+	{
+		$data	= array(
+            'title'		 	=> NAMETITLE . ' - Financial Group',
+            'content'	 	=> 'auth/privacy_police',
+			'extra'		 	=> 'auth/js/js_index',
+		);
+
+		$this->load->view('tamplate/wrapper', $data);
+	}
+
+	public function contact_notif()
+	{
+		$data	= array(
+            'title'		 	=> NAMETITLE . ' - Financial Group',
+            'content'	 	=> 'auth/contact_notif',
+			'extra'		 	=> 'auth/js/js_index',
+		);
+
+		$this->load->view('tamplate/wrapper', $data);
+	}
+
 
 
 }

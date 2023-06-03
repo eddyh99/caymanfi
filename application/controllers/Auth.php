@@ -41,4 +41,20 @@ class Auth extends CI_Controller
 		$this->load->view('tamplate/wrapper', $data);
 	}
 
+	public function booking()
+	{
+
+		$data	= array(
+            'title'		 	=> NAMETITLE . ' - Financial Group',
+            'content'	 	=> 'auth/booking',
+			'extra'		 	=> 'auth/js/js_index',
+			'booking'		=> base64_decode(@$_GET['booking']),
+		);
+
+		$this->load->view('tamplate/wrapper', $data);
+	}
+
+
+
+
 }

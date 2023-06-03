@@ -21,7 +21,7 @@
                 </span>
             </div>
             <div class="col-12 col-lg-6 mt-5">
-                <form method="">
+                <form action="<?=base_url()?>link/contact_notif" method="POST ">
                     <div class="mb-4 radio-getouch">
                         <span>
                             Select at least one * 

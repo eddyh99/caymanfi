@@ -1,0 +1,41 @@
+/*----------------------------------------------------------
+    File Name  : _inputs.scss
+    Desc       : File ini merupakan styling untuk 
+                 Input yang dapat dipanggil secara berulang
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Input Booking
+ *
+ */
+
+ @use '../abstracts/variables' as var;
+
+
+ /*----------------------------------------------------------
+1. Text Input Booking Start 
+------------------------------------------------------------*/ 
+.input-booking{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+    padding: 10px 10px 10px 20px;
+    height: 60px;
+    width: 60%;
+}
+
+.input-booking option {
+    color: rgb(89, 89, 89);
+}
+
+.input-booking::placeholder {
+    color: rgba(213, 213, 213, 1);
+}
+ /*----------------------------------------------------------
+1. Text Input Booking End 
+------------------------------------------------------------*/ 

@@ -13,7 +13,7 @@
  * 4. Immediate Access Page
  *
  * * * * * * * * * * * * * * * 
- * 5. Link 
+ * 5. Link Landing
  *
  */
 
@@ -46,6 +46,7 @@
 #card-landing {
     background-color: var.$bg-secondary-cayman;
 }
+
 
 .card {
     border-radius: 16px;
@@ -286,7 +287,7 @@
 ------------------------------------------------------------*/ 
 
 /*----------------------------------------------------------
-5. Link Start 
+5. Link Landing Start 
 ------------------------------------------------------------*/ 
 #banner-landing .container {
     height: 900px;
@@ -433,6 +434,44 @@
     }
 }
 
+#bg-mission {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 90%;
+    
+    @include mix.sm{
+        width: 40%;
+    }
+
+    @include mix.md{
+        width: 25%;
+    }
+}
+
+.bab-circle {
+    li {
+        list-style: disc;
+        margin-left: 40px;
+    }
+}
+
+.bg-contact-notif {
+    height: 100vh;
+    overflow-y: scroll !important;
+    background-color: #ffffff;      
+}
+
+.bg-booking {
+    background-color: rgba(245, 246, 248, 1);
+    height: 100%;
+}
+
+.text-booking-agreement {
+    line-height: 150%;
+}
+
 /*----------------------------------------------------------
-5. Link End 
+5. Link Landing End 
 ------------------------------------------------------------*/ 

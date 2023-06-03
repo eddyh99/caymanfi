@@ -4,7 +4,7 @@
             <div class="bank-banner">
                 <img src="<?= base_url()?>assets/img/banner-mission.webp" width="100%" class="pt-5 d-none d-md-block" alt="banner img">
                 <img src="<?= base_url()?>assets/img/banner-mission-m.webp" width="100%" class="pt-5 d-block d-md-none" alt="banner img">
-                <h1 class="text-black text-center fw-bold w-75">
+                <h1 class=" text-center fw-bold w-75" style="color: rgba(0, 0, 0, 0.54);">
                     The Paradise Of The Offshore Banks
                 </h1>
             </div> 
@@ -14,9 +14,9 @@
 
         <!-- Start Encrypted Bank Account -->
         <section id="card-landing" class="wrapper">
-            <div class="container">
-                <div class="col-12 col-lg-8 mx-auto">
-                    <p class="text-center pt-5 pb-3 fst-italic fw-normal text-black">Financial dreams delivered</p>
+            <div class="container position-relative">
+                <div class="col-12 col-lg-7 mx-auto position-relative">
+                    <p class="text-center pt-5 pb-3 fw-semibold text-black">Financial dreams delivered</p>
                     <span class="text-center pb-5 d-flex justify-content-center">
                         The mission of Cayman Financial group is to ensure the privacy and financial anonymity of companies and individuals and protect them from ongoing crimes committed by multinational corporations that access and misuse sensitive data without their consent, and our company is aimed  to protect individuals and companies from governments that could operate financial controls without authorization.
                     </span>
@@ -27,6 +27,7 @@
                         Our company gives this protection but in no way encourages the abuse of it, which means that we monitor every single transaction, and we make sure that our customers do not commit crimes, and that they use our services in full legality.
                     </span>
                 </div>
+                <img id="bg-mission" src="<?= base_url()?>assets/img/bg-mission.png" alt="bg-mission">
             </div>
         </section>
         <!-- End Encrypted Bank Account -->

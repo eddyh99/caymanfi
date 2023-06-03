@@ -22,7 +22,7 @@
             <div class="col-10 d-flex justify-content-center col-xl-3 footer-nav py-3">
                 <ul>
                     <li>
-                        <a href="">About us</a>
+                        <a href="<?= base_url()?>link/about_us">About us</a>
                     </li>
                     <li>
                         <a href="<?= base_url()?>link/our_mission">Our mission</a>
@@ -31,7 +31,7 @@
                         <a href="">Our team</a>
                     </li>
                     <li>
-                        <a href="">Privacy policy</a>
+                        <a href="<?= base_url()?>link/privacy_police">Privacy policy</a>
                     </li>
                 </ul>
             </div>
