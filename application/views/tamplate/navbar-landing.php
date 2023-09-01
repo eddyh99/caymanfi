@@ -53,7 +53,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?= base_url()?>auth/booking?booking=<?= base64_encode('agreement')?>">
+                    <a href="<?= base_url()?>auth/booking?booking=<?= base64_encode('form')?>">
                         <button class="btn btn-primary-cayman my-3 my-lg-0">
                             Online Banking
                         </button>

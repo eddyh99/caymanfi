@@ -36,6 +36,17 @@
 .input-booking::placeholder {
     color: rgba(213, 213, 213, 1);
 }
+
+.input-booking.input-text-area{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+    padding: 10px 10px 10px 20px;
+    height: 200px;
+    width: 60%;
+}
  /*----------------------------------------------------------
 1. Text Input Booking End 
 ------------------------------------------------------------*/ 

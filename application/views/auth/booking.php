@@ -47,7 +47,7 @@
                 <div class="row">
                     <div class="col-10 mx-auto d-flex justify-content-around align-items-center">
                         <div class="col-4">
-                            <a href="<?= base_url()?>auth/booking?booking=<?= base64_encode('agreement')?>">
+                            <a href="<?= base_url()?>">
                                 <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.5" y="0.5" width="34" height="34" rx="2.5" stroke="#1A9334"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14.382 25.5193C13.7607 26.1406 12.7534 26.1406 12.1321 25.5193L5.76846 19.1557C5.14717 18.5344 5.14717 17.5271 5.76846 16.9058L12.1321 10.5421C12.7534 9.92085 13.7607 9.92085 14.382 10.5421C15.0033 11.1634 15.0033 12.1707 14.382 12.792L10.7342 16.4398L29.1661 16.4398C30.0448 16.4398 30.757 17.1521 30.757 18.0307C30.757 18.9094 30.0448 19.6216 29.1661 19.6216L10.7342 19.6216L14.382 23.2694C15.0033 23.8907 15.0033 24.898 14.382 25.5193Z" fill="#1A9334"/>
@@ -84,26 +84,12 @@
                                     <input class="input-booking" id="name" name="name" type="text" placeholder="enter your name" required>
                                 </div>
                                 <div class="d-flex flex-column w-100 my-4">
-                                    <label class="text-color-link-grad py-2" for="region">Region</label>
-                                    <select id="region" name="region" class="input-booking" required>
-                                        <option value="" selected >Select Region</option>
-                                        <option value="" >Bali</option>
-                                    </select>
-                                </div>
-                                <div class="d-flex flex-column w-100 my-4">
-                                    <label class="text-color-link-grad py-2" for="time">Meeting Time</label>
-                                    <select id="time" name="time" class="input-booking" required>
-                                        <option value="" selected >Select time available </option>
-                                        <option value="" >Bali</option>
-                                    </select>
-                                </div>
-                                <div class="d-flex flex-column w-100 my-4">
                                     <label class="text-color-link-grad py-2" for="description">Description</label>
-                                    <input class="input-booking" id="description" name="description" type="text" placeholder="enter description" required>
+                                    <textarea class="input-booking input-text-area" id="description" name="description" type="text" placeholder="Max 150 carcters" rows="6" cols="50" maxlength="150" required ></textarea>
                                 </div>
                                 <div class="d-flex justify-content-start my-5 pb-5">
                                     <button class="btn btn-booking">
-                                        SAVE & COUNTINUE
+                                        SAVE & CONTINUE
                                     </button>
                                 </div>
                             </form>
@@ -120,16 +106,11 @@
             <div class="col-12 col-lg-8 col-xl-6 mx-auto">
                 <img class="img-fluid mx-auto d-block" src="<?= base_url()?>assets/img/success-contact.png" alt="success">
                 <p class="f-inter text-center fw-semibold mt-4">
-                    Lorem ipsum dolor sit amet consectetur. Lorem lacus eget 
-                    <br> 
-                    suspendisse netus montes. Amet egestas placerat blandit mauris 
-                    <br>
-                    sagittis proin ipsum mollis.
+                    Your request has been sent
                 </p>
                 <div class="d-flex justify-content-center mt-5">
-                    <a href="<?= base_url(); ?>"
-                        class="btn btn-booking w-30 f-inter px-5">
-                        <span>DONE</span>
+                    <a href="<?= base_url(); ?>" class="btn btn-booking w-50 f-inter px-5">
+                        <span>BACK TO HOMEPAGE</span>
                     </a>
                 </div>
             </div>
