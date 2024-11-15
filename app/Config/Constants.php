@@ -99,8 +99,8 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
     $addurl = '/'; 
 }
 
-$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://'.$_SERVER['HTTP_HOST'] : 'http://'.$_SERVER['HTTP_HOST'].$addurl;
-defined('BASE_URL') || define('BASE_URL',$protocol);
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://'.$_SERVER['HTTP_HOST'].$addurl : 'http://'.$_SERVER['HTTP_HOST'];
+defined('BASE') || define('BASE',$protocol);
 
 
 define('NAMETITLE', 'Cayman FG');

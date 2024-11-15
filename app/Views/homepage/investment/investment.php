@@ -1,7 +1,7 @@
 <!-- Start of Banner -->
 <div class="banner-service">
     <div class="wrapper-service" >
-        <img class="img-banner-investment" src="<?= BASE_URL?>assets/img/bg-main-investment.png" alt="bg-connections">
+        <img class="img-banner-investment" src="<?= base_url()?>assets/img/bg-main-investment.png" alt="bg-connections">
         <div class="hero-banner-service investment container">
             <div class="row content-investment h-100">
                 <div class="col-12 col-xl-7 m-auto">
@@ -14,7 +14,7 @@
                     <a href="" class="btn-investment mt-5">Investment list </a>
                 </div>
                 <div class="d-none d-xl-block col-xl-5 mt-auto">
-                    <img class="hero-investment" src="<?= BASE_URL?>assets/img/img-11.png" alt="img">
+                    <img class="hero-investment" src="<?= base_url()?>assets/img/img-11.png" alt="img">
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@
     <div class="container">
         <div class="row row-cols-1 row-cols-lg-2">
             <div class="col">
-                <img class="img-fluid" src="<?= BASE_URL ?>assets/img/img-12.png" alt="img">
+                <img class="img-fluid" src="<?= base_url() ?>assets/img/img-12.png" alt="img">
             </div>
             <div class="col right-side">
                 <h2 class="mt-4">
@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="d-none d-lg-block col">
-                <img class="img-fluid" src="<?= BASE_URL ?>assets/img/img-13.png" alt="img">
+                <img class="img-fluid" src="<?= base_url() ?>assets/img/img-13.png" alt="img">
             </div>
         </div>
     </div>

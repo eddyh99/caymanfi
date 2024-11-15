@@ -7,8 +7,8 @@
     <title><?= $title?></title>
 
     <!-- Favicons -->
-    <link href="<?= BASE_URL ?>assets/img/logo.png" rel="icon">
-    <link href="<?= BASE_URL ?>assets/img/logo.png" rel="apple-touch-icon">
+    <link href="<?= base_url() ?>assets/img/logo.png" rel="icon">
+    <link href="<?= base_url() ?>assets/img/logo.png" rel="apple-touch-icon">
 
     <!-- Google Font -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,14 +23,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Telephone Code -->
-    <link href="<?= BASE_URL ?>assets/libs/intl-tel-input-master/build/css/intlTelInput.css" rel="stylesheet">
+    <link href="<?= base_url() ?>assets/libs/intl-tel-input-master/build/css/intlTelInput.css" rel="stylesheet">
     
 
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="<?= BASE_URL ?>assets/style/css/main.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/style/css/main.css">
 
 
 </head>
@@ -38,8 +38,8 @@
     <!-- Start of Navbar -->
     <nav class="navbar navbar-expand-xxl">
         <div class="container">
-            <a class="navbar-logo" href="<?= BASE_URL?>">
-                <img class="logo" src="<?= BASE_URL?>assets/img/logo.png" alt="logo">
+            <a class="navbar-logo" href="<?= base_url()?>">
+                <img class="logo" src="<?= base_url()?>assets/img/logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="openbtn">
@@ -51,25 +51,25 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item me-0 me-xl-2">
-                        <a class="nav-link" aria-current="page" href="<?=BASE_URL?>?type=satoshi">Bank Services</a>
+                        <a class="nav-link" aria-current="page" href="<?=base_url()?>?type=satoshi">Bank Services</a>
                     </li>
                     <li class="nav-item me-0 me-xl-2">
-                        <a class="nav-link" aria-current="page" href="<?=BASE_URL?>?type=productservice">Investements</a>
+                        <a class="nav-link" aria-current="page" href="<?=base_url()?>?type=productservice">Investements</a>
                     </li>
                     <li class="nav-item me-0 me-xl-2">
-                        <a class="nav-link" aria-current="page" href="<?=BASE_URL?>?type=training">Crypto Services</a>
+                        <a class="nav-link" aria-current="page" href="<?=base_url()?>?type=training">Crypto Services</a>
                     </li>
                     <!-- <li class="nav-item me-0 me-xl-2">
-                        <a class="nav-link" href="<?=BASE_URL?>?type=service">Complementary Service</a>
+                        <a class="nav-link" href="<?=base_url()?>?type=service">Complementary Service</a>
                     </li> -->
                     <li class="nav-item me-0 me-lg-5 d-flex align-items-center justify-content-center">
-                        <a class="btn-nav-white" href="<?= BASE_URL ?>homepage/funds_reallocation">Funds Reallocation</a>
+                        <a class="btn-nav-white" href="<?= base_url() ?>homepage/funds_reallocation">Funds Reallocation</a>
                     </li>
                     <li class="nav-item me-0 me-lg-3 d-flex align-items-center justify-content-center">
-                        <a class="btn-nav-login" href="<?= BASE_URL ?>">Login</a>
+                        <a class="btn-nav-login" href="<?= base_url() ?>">Login</a>
                     </li>
                     <li class="nav-item mt-2 mt-lg-0 d-flex align-items-center justify-content-center">
-                        <a class="btn-nav-register" href="<?= BASE_URL ?>homepage/contactreferral">Sign Up</a>
+                        <a class="btn-nav-register" href="<?= base_url() ?>homepage/contactreferral">Sign Up</a>
                     </li>
                 </ul>
             </div>

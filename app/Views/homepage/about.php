@@ -2,7 +2,7 @@
 <div class="banner-homepage">
     <div class="wrapper-banner-homepage" >
         <video autoplay="" preload="" muted="" loop="" playsinline="">
-            <source src="<?= BASE_URL ?>assets/vid/banner-about.webm" type="video/webm">
+            <source src="<?= base_url() ?>assets/vid/banner-about.webm" type="video/webm">
         </video>
         <div class="hero-banner-about container">
             <div class="row center">
@@ -91,7 +91,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 d-flex align-items-center order-1 order-md-0">
-                <img class="img-fluid" src="<?= BASE_URL ?>assets/img/img-7.png" alt="img">
+                <img class="img-fluid" src="<?= base_url() ?>assets/img/img-7.png" alt="img">
             </div>
             <div class="col-12 col-md-6 info order-0 order-md-1">
                 <div>

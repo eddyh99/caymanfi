@@ -14,7 +14,7 @@
                     APY
                 </span>
                 <?php if($map != 'funds'):?>
-                    <a href="<?php echo BASE_URL . "homepage/investment/" . base64_encode("fund_management")?>" class="btn-map">SEE MORE</a>
+                    <a href="<?php echo base_url() . "homepage/investment/" . base64_encode("fund_management")?>" class="btn-map">SEE MORE</a>
                 <?php endif;?>
             </div>
         </div>
@@ -28,7 +28,7 @@
                     APY
                 </span>
                 <?php if($map != 'bitcoin'):?>
-                    <a href="<?php echo BASE_URL . "homepage/investment/" . base64_encode("bitcoin")?>" class="btn-map">SEE MORE</a>
+                    <a href="<?php echo base_url() . "homepage/investment/" . base64_encode("bitcoin")?>" class="btn-map">SEE MORE</a>
                 <?php endif;?>
             </div>
         </div>
@@ -42,7 +42,7 @@
                     APY
                 </span>
                 <?php if($map != 'hedge'):?>
-                    <a href="<?php echo BASE_URL . "homepage/investment/" . base64_encode("hedge")?>" class="btn-map">SEE MORE</a>
+                    <a href="<?php echo base_url() . "homepage/investment/" . base64_encode("hedge")?>" class="btn-map">SEE MORE</a>
                 <?php endif;?>
             </div>
         </div>

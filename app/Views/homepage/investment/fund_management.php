@@ -1,7 +1,7 @@
 <!-- Start of Banner -->
 <div class="banner-service">
     <div class="wrapper-service" >
-        <img class="img-banner-investment fund" src="<?= BASE_URL?>assets/img/bg-investment-fund.png" alt="bg-connections">
+        <img class="img-banner-investment fund" src="<?= base_url()?>assets/img/bg-investment-fund.png" alt="bg-connections">
         <div class="hero-banner-service investment-fund container">
             <div class="row content-investment">
                 <div class="col-12 col-lg-8 col-xl-7 col-xxl-7">
@@ -43,7 +43,7 @@
                 </p>
             </div>
             <div class="col-10 m-auto col-lg-6 order-0 order-lg-1">
-                <img class="img-fluid" src="<?= BASE_URL ?>assets/img/img-14.png" alt="img">
+                <img class="img-fluid" src="<?= base_url() ?>assets/img/img-14.png" alt="img">
             </div>
         </div>
     </div>
@@ -163,7 +163,7 @@
                 </a>
             </div>
             <div class="col-12 col-lg-6 order-0 order-lg-1 m-auto p-2 p-sm-5">
-                <img class='img-fluid' src='<?= BASE_URL ?>assets/img/logo.png' alt='img'>
+                <img class='img-fluid' src='<?= base_url() ?>assets/img/logo.png' alt='img'>
             </div>
         </div>
     </div>
@@ -199,7 +199,7 @@
                 <span class="apy">
                     APY
                 </span>
-                <a href="<?php echo BASE_URL . "homepage/investment/" . base64_encode("botcoin")?>" class="btn-map">SEE MORE</a>
+                <a href="<?php echo base_url() . "homepage/investment/" . base64_encode("botcoin")?>" class="btn-map">SEE MORE</a>
             </div>
         </div>
         
@@ -211,7 +211,7 @@
                 <span class="apy">
                     APY
                 </span>
-                <a href="<?php echo BASE_URL . "homepage/investment/" . base64_encode("hedge")?>" class="btn-map">SEE MORE</a>
+                <a href="<?php echo base_url() . "homepage/investment/" . base64_encode("hedge")?>" class="btn-map">SEE MORE</a>
             </div>
         </div>
         

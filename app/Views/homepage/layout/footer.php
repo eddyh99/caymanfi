@@ -10,7 +10,7 @@ use CodeIgniter\Boot;
             <div class="row">
                 <div class="col-12 text-link d-flex flex-column flex-md-row align-items-start justify-content-between">
                     <div class="logo-footer">
-                        <img src="<?= BASE_URL ?>assets/img/logo.png" alt="img">
+                        <img src="<?= base_url() ?>assets/img/logo.png" alt="img">
                     </div>
                     <div class="list mt-4 mt-md-0">
                        <a href="" class="me-4">CONTACT US</a>
@@ -34,10 +34,10 @@ use CodeIgniter\Boot;
                         </div>
                         <div class="links col-12 col-lg-4 order-0 order-lg-1">
                             <div>
-                                <a href="<?= BASE_URL?>homepage/investment">Investments</a>
+                                <a href="<?= base_url()?>homepage/investment">Investments</a>
                                 <a href="">Bank Services</a>
                                 <a href="">Crypto Services</a>
-                                <a href="<?= BASE_URL ?>homepage/about">About CFG & Mission</a>
+                                <a href="<?= base_url() ?>homepage/about">About CFG & Mission</a>
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 order-1 order-lg-2">
@@ -100,10 +100,10 @@ use CodeIgniter\Boot;
     <script src="https://unpkg.com/split-type"></script>
     
     <!-- Telephone Code -->
-    <script src="<?= BASE_URL?>assets/libs/intl-tel-input-master/build/js/intlTelInput.js"></script>
+    <script src="<?= base_url()?>assets/libs/intl-tel-input-master/build/js/intlTelInput.js"></script>
     
     <!-- Custom General Javascript -->
-    <script src="<?= BASE_URL ?>assets/js/script.js"></script>
+    <script src="<?= base_url() ?>assets/js/script.js"></script>
 
     <?php
         if (@isset($extra)) {

@@ -1,7 +1,7 @@
 <!-- Start of Banner -->
 <div class="banner-service">
     <div class="wrapper-service" >
-        <img class="img-banner" src="<?= BASE_URL?>assets/img/bg-funds.webp" alt="bg-connections">
+        <img class="img-banner" src="<?= base_url()?>assets/img/bg-funds.webp" alt="bg-connections">
         <div class="hero-banner-service container">
             <div class="row center">
                 <div class="col-12">
@@ -31,7 +31,7 @@
                 </p>
             </div>
             <div class="col-12 col-lg-6">
-                <img class="img-fluid" src="<?= BASE_URL?>assets/img/img-8.png" alt="img">
+                <img class="img-fluid" src="<?= base_url()?>assets/img/img-8.png" alt="img">
             </div>
         </div>
     </div>
@@ -59,7 +59,7 @@
             <div class="col-11 mx-auto bg-wrapper">
                 <div class="row row-cols-1 row-cols-lg-2">
                     <div class="col img-wrapper">
-                        <img class="img-fluid" src="<?= BASE_URL ?>assets/img/img-9.png" alt="img">
+                        <img class="img-fluid" src="<?= base_url() ?>assets/img/img-9.png" alt="img">
                     </div>
                     <div class="col p-5">
                         <div class="d-flex my-4 align-items-center">
@@ -186,7 +186,7 @@
                     </div>
                 </div>
                 <div class="col order-0 order-lg-1 wrapper-img d-flex justify-content-center justify-content-lg-end">
-                    <img class="img-fluid" src="<?= BASE_URL?>assets/img/img-10.png" alt="img">
+                    <img class="img-fluid" src="<?= base_url()?>assets/img/img-10.png" alt="img">
                 </div>
             </div>
         </div>
