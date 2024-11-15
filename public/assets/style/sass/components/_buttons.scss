@@ -1,0 +1,208 @@
+/*----------------------------------------------------------
+    File Name  : _navbar.scss
+    Desc       : File ini merupakan styling untuk 
+                 Component Button yang akan dipakai berulang
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Buttons Landing Page
+ *
+ */
+
+ @use '../abstracts/variables' as var;
+
+
+ /*----------------------------------------------------------
+1. Buttons Landing page Start 
+------------------------------------------------------------*/ 
+.btn-navbar-contactform {
+    display: block;
+    background-color: var.$bg-primary-pnglobal;
+    color: var.$text-black-pnglobal;
+    padding: 0.3rem 0.5rem !important;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    
+    &:hover {
+        background-color: var.$bg-primary-pnglobal;
+        color: var.$text-black-pnglobal;
+        box-shadow: 0px 4px 4px 0px #E8D9BD;
+        font-weight: 700;
+    }
+}
+
+.btn-navbar-about {
+    display: block;
+    background-color: var.$bg-black-pnglobal;
+    color: var.$text-primary-pnglobal;
+    padding: 0.3rem 0.5rem !important;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    
+    &:hover {
+        background-color: var.$bg-black-pnglobal;
+        color: var.$text-primary-pnglobal;
+        box-shadow: 0px 4px 4px 0px #E8D9BD;
+        font-weight: 700;
+    }
+}
+
+.btn-navbar-referral {
+    display: block;
+    background-color: var.$bg-white-pnglobal;
+    color: var.$text-primary-pnglobal;
+    padding: 0.3rem 0.5rem !important;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    
+    &:hover {
+        background-color: var.$bg-white-pnglobal;
+        color: var.$text-primary-pnglobal;
+        box-shadow: 0px 4px 4px 0px #E8D9BD;
+        font-weight: 700;
+    }
+}
+
+.btn-flip {
+    background-color: var.$bg-primary-pnglobal;
+    padding: 1rem 1.5rem;
+    border-radius: 999999px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+}
+
+.btn-zoom {
+    width: 100%;
+    background-color: var.$bg-primary-pnglobal;
+    padding: 1.0rem 0.5rem;
+    border-radius: 999999px;
+    text-transform: uppercase;
+    color: var.$text-white-pnglobal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.btn-footer-contactform {
+    background-color: var.$bg-primary-pnglobal;
+    color: var.$text-black-pnglobal;
+    padding: 0.8rem 1rem !important;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    
+    &:hover {
+        background-color: var.$bg-primary-pnglobal;
+        color: var.$text-white-pnglobal;
+        box-shadow: 0px 4px 4px 0px #E8D9BD;
+        font-weight: 700;
+    }
+}
+
+.btn-footer-enrollnow {
+    background-color: var.$bg-black-pnglobal;
+    color: var.$text-white-pnglobal;
+    padding: 0.8rem 1rem !important;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    
+    &:hover {
+        background-color: var.$bg-black-pnglobal;
+        color: var.$text-white-pnglobal;
+        box-shadow: 0px 4px 4px 0px #E8D9BD;
+        font-weight: 700;
+    }
+}
+
+.btn-know-team {
+    background-color: #000000;
+    color: var.$text-primary-pnglobal;
+    padding: 0.8rem 3rem !important;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+// CAYMAN
+
+.btn-nav-white {
+    background-color: var.$bg-white-cayman;
+    color: var.$text-oldgreen-cayman;
+    padding: 0.5rem 1rem !important;
+    border: 1px solid var.$bg-oldgreen-cayman;
+    font-size: 14px;
+    border-radius: 999999999px;
+}
+
+.btn-nav-login {
+    background-color: transparent;
+    color: var.$text-black-cayman;
+    padding: 0.5rem 1rem !important;
+    border: 1px solid var.$bg-oldgreen-cayman;
+    font-size: 14px;
+    border-radius: 999999999px;
+}
+
+.btn-nav-register {
+    background-color: var.$bg-oldgreen-cayman;
+    color: var.$text-white-cayman;
+    padding: 0.5rem 1rem !important;
+    border: 1px solid var.$bg-oldgreen-cayman;
+    font-size: 14px;
+    border-radius: 999999999px;
+}
+
+.btn-banner-homepage {
+    display: inline-block;
+    background-color: var.$bg-oldgreen-cayman;
+    border: 1px solid var.$text-white-cayman;
+    color: var.$text-white-cayman;
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem !important;
+    font-size: 17px;
+}
+
+.btn-cayman {
+    display: inline-block;
+    background-color: var.$bg-oldgreen-300-cayman;
+    color: var.$text-white-cayman;
+    border-radius: 10px;
+    padding: 1rem 0.7rem;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.btn-map {
+  background-color: var.$bg-oldgreen-cayman;
+  padding: 1rem;
+  color: var.$text-white-cayman;
+  border-radius: 10px;
+  
+  &.disabled {
+      background-color: var.$bg-secondary-200-cayman;
+  }
+} 
+
+.btn-investment {
+    display: inline-block;
+    background-color: #D2EED8;
+    color: #0D0D0D;
+    padding: 0.5rem 1.5rem;
+    border-radius: 999999px;
+}
+
+ /*----------------------------------------------------------
+1. Buttons Landing page End 
+------------------------------------------------------------*/ 
+
+
+
+

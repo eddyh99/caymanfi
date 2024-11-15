@@ -1,0 +1,332 @@
+/*----------------------------------------------------------
+    File Name  : _homepage.scss
+    Desc       : File ini merupakan styling untuk Homepage
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Banner Homepage
+ * 2. Financial Future Homepage
+ * 3. Financial Innovative Homepage
+ * 4. Financial Multiple Homepage
+ * 5. Financial Journey Homepage
+ *
+ */
+
+ @use '../abstracts/variables' as var;
+ @use '../abstracts/mixins' as mix;
+ 
+/*----------------------------------------------------------
+1. Banner Homepage Start
+------------------------------------------------------------*/ 
+.banner-homepage {
+    position: relative;
+    overflow: hidden;
+
+    .wrapper-banner-homepage {
+        display: flex;
+        min-height: 100vh !important;
+        
+        video {
+            @include mix.video-banner-center;
+        }
+        
+        .img-banner {
+            @include mix.video-banner-center;
+        }
+
+        .hero-banner-homepage {
+            @include mix.flex-kiri-vertical;
+            z-index: 2;
+            text-align: start;
+            width: 100%;
+
+            .content {
+                h1{
+                    color: var.$text-oldgreen-100-cayman;
+                    font-weight: 900;
+                    margin-bottom: 1rem;
+                    font-size: 40px;
+                    margin-bottom: 0.3rem;
+                    
+                    @include mix.md {
+                        font-size: 56px;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                h2{
+                    font-weight: 700;
+                    color: var.$text-white-cayman;
+                    font-size: 21px;
+                    margin-bottom: 0.3rem;
+                    
+                    @include mix.md{
+                        margin-bottom: 1rem;
+                        font-size: 30px;
+                    }
+                }
+
+                p{
+                    color: var.$text-white-cayman;
+                    text-align: justify;
+                    padding-right: 2rem;
+                    font-size: 14px;
+                    margin-bottom: 0px;
+                    
+                    @include mix.md {
+                        padding-right: 10rem;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+
+        .hero-banner-about {
+            @include mix.flex-tengah-vertical;
+            z-index: 2;
+            text-align: center;
+            width: 100%;
+
+            .center {
+                background-color: rgba(7, 49, 24, 0.75);
+                padding: 1rem 2rem ;
+
+                h1{
+                    color: var.$text-white-cayman;
+                    font-weight: 700;
+                    margin-bottom: 1rem;
+                    font-size: 16px;
+                    margin-bottom: 0.3rem;
+                    font-family: var.$f-inter;
+                    
+                    @include mix.xs {
+                        font-size: 20px;
+                    }
+                    
+                    @include mix.sm {
+                        font-size: 26px;
+                    }
+                    
+                    @include mix.md {
+                        font-size: 30px;
+                    }
+                                        
+                    @include mix.lg {
+                        font-size: 45px;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/*----------------------------------------------------------
+1. Banner Homepage End
+------------------------------------------------------------*/ 
+
+
+
+
+/*----------------------------------------------------------
+2. Financial Future Homepage Start
+------------------------------------------------------------*/ 
+.financial-future-homepage {
+    background-color: var.$bg-secondary-cayman;
+
+    .head {
+        h2 {
+            margin-bottom: 1rem;
+            color: var.$text-oldgreen-200-cayman;
+        }
+
+        p {
+            color: var.$text-secondary-cayman;
+        }
+    }
+
+    .card-future {
+        
+        .card-wrapper {
+            padding: 1rem;
+            
+            .card {
+                color: var.$text-white-cayman;
+                padding: 0rem 1.5rem 3rem 1.5rem;
+                font-weight: 500;
+                text-align: justify;
+                @include mix.flex-tengah-vertical;
+                height: 26rem;
+                
+                @include mix.md {
+                    height: 30rem;
+
+                }
+
+                @include mix.xl2 {
+                    height: 26rem;
+                }
+
+                h3 {}
+
+                h5 {
+                    margin-bottom: 2rem;
+                    color: var.$text-secondary-100-cayman;
+                }
+
+                p {
+                    font-weight: 300;
+                    color: var.$text-secondary-100-cayman;
+                }
+                
+                  
+                &.dark-green {
+                    background: var.$bg-oldgreen-100-cayman;
+                }
+
+                &.light-green {
+                    background: var.$bg-oldgreen-200-cayman;
+                }
+
+            }
+        }
+    }
+}
+/*----------------------------------------------------------
+2. Financial Future Homepage End
+------------------------------------------------------------*/ 
+
+
+
+
+/*----------------------------------------------------------
+3. Financial Innovative Homepage Start
+------------------------------------------------------------*/ 
+.financial-innovation-homepage{
+    position: relative;
+
+    .left-side {
+
+        h3 {
+            color: var.$text-oldgreen-200-cayman;
+        }
+
+        h5 {
+            color: var.$text-oldgreen-300-cayman;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: var.$text-secondary-cayman;
+            text-align: justify;
+        }
+    }
+}
+/*----------------------------------------------------------
+3. Financial Innovative Homepage End
+------------------------------------------------------------*/ 
+
+
+
+
+/*----------------------------------------------------------
+4. Financial Multiple Homepage Start
+------------------------------------------------------------*/ 
+.financial-multiple-homepage {
+    .head {
+        h2,h5 {
+            text-align: center;
+        }
+    }
+
+    .content {
+
+        .line-vertical {
+            height: 100%;
+            width: 2px;
+            background-color: var.$text-secondary-200-cayman;
+        }
+
+        .wrapper-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .card {
+                // background-color: red;
+                padding: 2rem;
+                margin-bottom: 1rem;
+                box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.25);
+
+                .discover {
+                    font-size: 14px;
+                    color: var.$text-red-cayman;
+                }
+            
+                .support {
+                    font-size: 14px;
+                    color: var.$text-black-100-cayman;
+
+                }
+            }
+        }
+    }
+}
+/*----------------------------------------------------------
+4. Financial Multiple Homepage End
+------------------------------------------------------------*/ 
+
+
+
+/*----------------------------------------------------------
+5. Financial Journey Homepage Start
+------------------------------------------------------------*/ 
+.financial-journey-homepage {
+    background-color: var.$bg-lightgreen-cayman;
+    .wrapper-img {
+        background-image: url('../../img/img-3.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        height: 15rem;
+        
+        @include mix.lg{
+            height: auto;
+        }
+    }
+
+    .right-side {
+        padding-left: 0rem;
+        padding-top: 2rem;
+        
+        @include mix.lg {
+            padding-left: 10rem;
+            padding-top: 0rem;
+        }
+
+        h2 {
+            font-weight: 800;
+            color: var.$text-oldgreen-200-cayman; 
+        }
+
+        p {
+            color: var.$text-black-100-cayman;
+            text-align: justify;
+        }
+
+        .exclusive {
+            color: var.$text-secondary-300-cayman;
+        }
+
+    }
+}
+/*----------------------------------------------------------
+5. Financial Journey Homepage End
+------------------------------------------------------------*/ 
+

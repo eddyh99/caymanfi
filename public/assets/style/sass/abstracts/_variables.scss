@@ -1,0 +1,135 @@
+    /*----------------------------------------------------------
+    File Name  : _variables.scss
+    Desc       : File ini merupakan file untuk membuat variable CSS 
+                 yang nanti akan digunakan secara berulang-ulang
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Font Family
+ * 2. Color Text
+ * 3. Color Background
+ * 4. Media Query
+ *
+ */
+
+
+/*----------------------------------------------------------
+1. Font Family Start
+------------------------------------------------------------*/ 
+$f-odor: 'Odor Mean Chey', serif !default;
+$f-lato: 'Lato', sans-serif !default;
+$f-noto: 'Noto Serif', serif !default;
+
+// CAYMAN
+$f-heebo: "Heebo", sans-serif !default;
+$f-manrope: "Manrope", sans-serif !default;
+$f-inter: 'Inter', sans-serif !default;
+/*----------------------------------------------------------
+1. Font Family End
+------------------------------------------------------------*/ 
+
+
+
+
+/*----------------------------------------------------------
+2. Color text Start
+------------------------------------------------------------*/ 
+$text-white-pnglobal: #FFFFFF !default;
+$text-primary-pnglobal: #BFA573 !default;
+$text-black-pnglobal: #1E1E1E !default;
+$text-black-100-pnglobal: #383734 !default;
+$text-secondary-pnglobal: #6A625B !default;
+$text-secondary-100-pnglobal: #E8D9BD !default;
+$text-secondary-200-pnglobal: #A0714A !default;
+$text-hand-pnglobal: #2F1A07 !default;
+
+$text-black-cayman: #000000 !default;
+$text-black-100-cayman: #3E3E3E !default;
+$text-black-200-cayman: #0E0E0E !default;
+$text-white-cayman: #FFFFFF !default;
+$text-secondary-cayman: #505050 !default;
+$text-secondary-100-cayman: #D9D9D9 !default;
+$text-secondary-200-cayman: #E1E1E1 !default;
+$text-secondary-300-cayman: #545454 !default;
+$text-secondary-400-cayman: rgba(0, 0, 0, 0.54) !default;
+$text-secondary-500-cayman: rgba(0, 0, 0, 0.70) !default;
+$text-red-cayman: #D3732D !default;
+$text-oldgreen-cayman: #093B26 !default;
+$text-oldgreen-100-cayman: #00460F !default;
+$text-oldgreen-200-cayman: #11522D !default;
+$text-oldgreen-300-cayman: #398460 !default;
+$text-oldgreen-400-cayman: #436151 !default;
+$text-oldgreen-500-cayman: #06633C !default;
+$text-oldgreen-600-cayman: #4A6F5B !default;
+$text-oldgreen-700-cayman: #0B512A !default;
+/*----------------------------------------------------------
+2. Color Text End
+------------------------------------------------------------*/ 
+
+
+/*----------------------------------------------------------
+3. Color background Start
+------------------------------------------------------------*/ 
+$bg-contactform-pnglobal: #3F3F3F;
+$bg-black-pnglobal: #1E1E1E;
+$bg-white-pnglobal: #FFFFFF;
+$bg-primary-pnglobal: #BFA573;
+$bg-primary-100-pnglobal: #CCB78F;
+$bg-primary-200-pnglobal: #D3C19E;
+$bg-primary-300-pnglobal: #C6B39F;
+$bg-primary-400-pnglobal: #C5A571;
+$bg-primary-500-pnglobal: #C9B6A2;
+$bg-primary-600-pnglobal: #E8D9BD;
+$bg-primary-700-pnglobal: #E2D6BF;
+$bg-box-100-pnglobal: #585858;
+$bg-box-200-pnglobal: #B2A291;
+$bg-box-300-pnglobal: #E6E0D4;
+$bg-box-400-pnglobal: #8F8379;
+$bg-box-500-pnglobal: #7C6553;
+$bg-box-600-pnglobal: #3E3E3D;
+$bg-box-700-pnglobal: #AE9A72;
+$bg-box-brown-pnglobal: #AB8D6D;
+$bg-box-brown-100-pnglobal: #42413F;
+$bg-about-pnglobal: #F3EBDC;
+$bg-silver-pnglobal: #E0E0E0;
+
+$bg-white-cayman: #FFFFFF !default;
+$bg-secondary-cayman: #D9D9D9 !default;
+$bg-secondary-100-cayman: #DFDFDF !default;
+$bg-secondary-200-cayman: #7E8581 !default;
+$bg-oldgreen-cayman: #406852 !default;
+$bg-oldgreen-100-cayman: #0C2C19 !default;
+$bg-oldgreen-200-cayman: #1F4828 !default;
+$bg-oldgreen-300-cayman: #073118 !default;
+$bg-oldgreen-400-cayman: #5F7A6F !default;
+$bg-lightgreen-cayman: #C6D1CB !default;
+$bg-lightgreen-100-cayman: #B3BDB7 !default;
+
+/*----------------------------------------------------------
+3. Color background End
+------------------------------------------------------------*/ 
+
+
+
+/*----------------------------------------------------------
+4. Breakpoints Start
+------------------------------------------------------------*/ 
+$screen-375: 375px;
+$screen-425: 425px;
+$screen-567: 567px;
+$screen-599: 599px;
+$screen-768: 768px;
+$screen-992: 992px;
+$screen-1024: 1024px;
+$screen-1200: 1200px;
+$screen-1280: 1280px;
+$screen-1400: 1400px;
+$screen-1500: 1500px;
+
+/*----------------------------------------------------------
+4. Breakpoints End
+------------------------------------------------------------*/ 
+

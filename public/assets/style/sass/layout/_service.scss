@@ -1,0 +1,543 @@
+/*----------------------------------------------------------
+    File Name  : _service.scss
+    Desc       : File ini merupakan styling untuk seluruh service
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Banner General Service
+ * 2. Fund Reallocation Service
+ * 3. Investment
+ *
+ */
+
+ @use '../abstracts/variables' as var;
+ @use '../abstracts/mixins' as mix;
+ 
+/*----------------------------------------------------------
+1. Banner General Service Start
+------------------------------------------------------------*/ 
+
+.banner-service {
+    position: relative;
+    overflow: hidden;
+    .wrapper-service {
+        display: flex;
+        min-height: 100vh;
+        position: relative;
+
+        video {
+            @include mix.video-banner-center;
+        }
+
+        .img-banner {
+            @include mix.video-banner-center;
+        }
+
+        .img-banner-investment {
+            width: 100%;
+            min-height: 95vh !important;
+            position: absolute;
+            z-index: 1;
+            object-fit: cover;
+            object-position: 50% 50%;
+
+            &.fund {
+                min-height: 100vh !important;
+            }
+        }
+
+        .hero-investment {
+            height: 80vh;
+        }
+
+        .hero-banner-service {
+            @include mix.flex-tengah-vertical;
+            z-index: 2;
+            text-align: center;
+            width: 100%;
+            
+            &.investment {
+                @include mix.flex-kiri-vertical;
+                text-align: start;
+            }
+
+            &.investment-fund {
+                @include mix.flex-kiri-vertical;
+                justify-content: start;
+                margin-top: 8rem;
+                text-align: start;
+            }
+            
+
+            .center {
+                background-color: rgba(255, 255, 255, 0.75);
+                padding: 1rem 2rem;
+
+                h1{
+                    color: var.$text-oldgreen-500-cayman;
+                    font-weight: 700;
+                    margin-bottom: 1rem;
+                    font-size: 16px;
+                    margin-bottom: 0.3rem;
+                    font-family: var.$f-inter;
+                    
+                    @include mix.xs {
+                        font-size: 20px;
+                    }
+                    
+                    @include mix.sm {
+                        font-size: 26px;
+                    }
+                    
+                    @include mix.md {
+                        font-size: 30px;
+                    }
+                                        
+                    @include mix.lg {
+                        font-size: 45px;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+            }
+
+            .content-investment {
+                width: 100%;
+                h1{
+                    color: var.$text-white-cayman;
+                    font-weight: 900;
+                    margin-bottom: 1rem;
+                    font-size: 36px;
+                    margin-bottom: 0.3rem;
+                    
+                    @include mix.md {
+                        font-size: 45px;
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                p{
+                    color: var.$text-secondary-200-cayman;
+                    text-align: justify;
+                    padding-right: 2rem;
+                    font-size: 14px;
+                    margin-bottom: 0px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    
+                    @include mix.md {
+                        font-size: 16px;
+                    }
+
+                }
+
+                .fund {
+                    color: #06633C;
+                    font-family: var.$f-inter;
+                    border-left: 15px solid #469E64;
+                    padding-left: 1rem;
+                    font-size: 28px;
+                    font-weight: 700;
+                    
+                    @include mix.md {
+                        font-size: 20px;
+                    }
+                    
+                    @include mix.lg{
+                        font-size: 40px;
+                    }
+
+                    span {
+                        font-size: 34px;
+                        font-weight: 600;
+                            
+                    @include mix.md {
+                        font-size: 34px;
+                    }
+                    
+                    @include mix.lg{
+                        font-size: 40px;
+                    }
+                    }
+                }
+            }
+        }
+
+    }
+}
+ 
+/*----------------------------------------------------------
+1. Banner General Service End
+------------------------------------------------------------*/ 
+
+
+/*----------------------------------------------------------
+2. Fund Reallocation Start
+------------------------------------------------------------*/ 
+.funds-safe{
+
+    .left-side {
+
+        h3 {
+            color: var.$text-oldgreen-200-cayman;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        p {
+            color: var.$text-secondary-400-cayman;
+            text-align: justify;
+            padding-right: 1rem;
+            margin: 2rem 0;
+            
+            @include mix.lg {
+                padding-right: 3rem;
+            }
+        }
+    }
+}
+
+.optimal-fund {
+    // filter: drop-shadow(0px 4px 4px #073118);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px #073118;
+    border: 1px solid #06633C;
+    padding: 2rem;
+    margin-bottom: 5rem;
+
+    h5 {
+        text-align: center;
+        color: var.$text-secondary-500-cayman;
+        font-family: var.$f-manrope;
+    }
+}
+
+.global-fund {
+
+    .bg-wrapper {
+        background-color: rgba(64, 104, 82, 0.2);
+
+        .img-wrapper {
+            @include mix.flex-tengah;
+            padding: 3rem;
+            padding-bottom: 0rem;
+            
+            @include mix.lg{
+                padding: 3rem;
+            }
+        }
+    }
+}
+
+.bookconsultant-fund {
+    overflow-x: hidden;
+
+    .bg-booking {
+        background-image: url('../../img/bgfunds-consultant.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .details {
+            overflow-x: hidden;
+            margin-left: 3rem;
+            padding: 0rem 0rem 3rem 0rem;
+            
+            @include mix.lg {
+                padding: 3rem 0rem 3rem 0rem;
+            }
+
+            h5 {
+                color: var.$text-secondary-100-cayman;
+                font-family: var.$f-manrope;
+                text-align: start;
+                
+                @include mix.lg {
+                    text-align: justify;
+                }
+            }
+            
+            .top {
+                padding-top: 3rem !important;
+            }
+            
+            h4 {
+                color: var.$text-white-cayman;
+                margin-top: 3rem;
+                font-family: var.$f-manrope;
+                text-align: start;
+                
+                @include mix.lg {
+                    text-align: justify;
+                }
+            }
+        }
+
+        .wrapper-img {
+            padding: 3rem 3rem 0rem 3rem;
+            
+            @include mix.lg {
+                padding: 3rem 3rem 3rem 3rem;
+            }
+
+            img {
+                object-fit: cover;
+                width: 47rem;
+                height: 30rem;
+
+                @include mix.lg {
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+
+    }
+
+}
+/*----------------------------------------------------------
+2. Fund Reallocation End
+------------------------------------------------------------*/ 
+
+
+
+
+/*----------------------------------------------------------
+3. Investment Start
+------------------------------------------------------------*/ 
+.main-investment-high-quality {
+    background-color: var.$bg-secondary-cayman;
+
+    .right-side {
+        padding-left: 0rem;
+        @include mix.flex-tengah-vertical;
+        
+        @include mix.lg {
+            padding-left: 4rem;
+        }
+
+        h2 {
+            font-size: 35px;
+            margin-bottom: 0rem;
+
+            @include mix.lg {
+                margin-bottom: 4rem;
+            }
+        }
+
+    }
+}
+
+.main-future-investment {
+    .left-side {
+        p {
+            margin-bottom: 2rem;
+            padding-right: 4rem;
+        }
+        
+        .head {
+            color: var.$text-oldgreen-300-cayman;
+            text-transform: uppercase;
+        }
+        
+        .foot {
+            padding: 0rem 3rem;
+            p {
+                margin-bottom: 0rem;
+                text-align: justify;
+            }
+            .priority {
+                color: var.$text-oldgreen-300-cayman;
+                text-transform: uppercase;
+            }
+        }
+        
+    }
+}
+
+.world-invesment {
+    overflow-x: hidden;
+    margin-top: 2rem;
+    .text-flight {
+        color: var.$text-oldgreen-600-cayman;
+        font-family: var.$f-manrope;
+        padding-left: 3rem;
+        font-weight: 900;
+    }
+
+    .bg-map {
+        background-image: url('../../img/bg-map.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        margin-top: 2rem;
+        
+        @include mix.lg {
+            height: 100vh;
+        }
+
+        @include mix.flex-tengah;
+
+        .card {
+            @include mix.flex-tengah-vertical;
+            padding: 2rem;
+            position: relative;
+            border-radius: 20px;
+            background-color: var.$bg-secondary-100-cayman;
+            
+            &.active {
+                background-color: #406852 ;
+                
+                .persen, .apy{
+                    color: #FFFFFF !important;
+                }
+            }
+
+            .persen {
+                display: inline-block;
+                font-size: 115px;
+                font-weight: 900;
+                color: var.$text-oldgreen-700-cayman;
+            }
+            
+            .apy {
+                font-size: 40px;
+                font-weight: 600;
+                color: var.$text-oldgreen-700-cayman;
+                text-align: center;
+            }
+
+            .btn-map {
+                position: absolute;
+                bottom: -30px;
+            }
+        }
+    }
+}
+
+.investment-opp {
+    h3 {
+        color: var.$bg-oldgreen-300-cayman;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        text-align: justify;
+        padding-right: 0;
+        
+        @include mix.md {
+            padding-right: 4rem;
+        }
+    }
+
+    .head {
+        color: var.$text-oldgreen-300-cayman;
+        text-transform: uppercase;
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+}
+
+.investment-adv {
+
+    .bg-wrapper {
+        background-color: var.$bg-oldgreen-400-cayman;
+        
+        &.bitcoin {
+            background-color: #093B26;
+        }
+        
+        &.hedge {
+            background-color: #406153;
+        }
+
+        .img-wrapper {
+            background-image: url('../../img/img-15.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto;
+            
+            &.bitcoin {
+                background-image: url('../../img/img-18.png');
+                background-position: bottom !important;
+            }
+
+            &.hedge {
+                background-image: url('../../img/img-21.png');
+                background-position: bottom !important;
+            }
+        }
+
+        .title {
+            text-transform: uppercase;
+            color: #CAF4E0;
+        }
+
+        h5 {
+            color: var.$text-white-cayman;
+            font-weight: 400;
+        }
+    }
+}
+
+.investment-fund-work{
+    background-color: rgba(64, 97, 93, 0.57);
+
+    text-align: center;
+    h3{
+        text-transform: uppercase;
+        color: #012912;
+    }
+
+    h5 {
+        margin-top: 1rem;
+        color: rgba(0, 0, 0, 0.64);
+    }
+
+    .account {
+        text-decoration: underline;
+        color: #000000;
+    }
+}
+
+.investment-fund-why {
+    .container {
+        padding: 3rem;
+        background-color: #C4D0C9;
+
+        p {
+            text-align: justify;
+            color: #505050;
+        }
+
+        .title {
+            text-transform: uppercase;
+            color: #073118;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .btn-cayman {
+            font-size: 14px;
+            
+            @include mix.lg {
+                font-size: 17px;
+            }
+        }
+
+        .bitcoin-list{
+            li {
+                list-style: inside;
+            }
+        }
+    }
+}
+/*----------------------------------------------------------
+3. Investment End
+------------------------------------------------------------*/ 
