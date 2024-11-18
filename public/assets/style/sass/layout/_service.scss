@@ -10,6 +10,8 @@
  * 1. Banner General Service
  * 2. Fund Reallocation Service
  * 3. Investment
+ * 4. Bank
+ * 5. Crypto
  *
  */
 
@@ -47,6 +49,15 @@
             &.fund {
                 min-height: 100vh !important;
             }
+
+            &.bank {
+                height: 100vh !important;
+            }
+            
+            &.crypto {
+                height: 100vh !important;
+                object-position: right;
+            }
         }
 
         .hero-investment {
@@ -83,6 +94,8 @@
                     font-size: 16px;
                     margin-bottom: 0.3rem;
                     font-family: var.$f-inter;
+
+          
                     
                     @include mix.xs {
                         font-size: 20px;
@@ -100,6 +113,18 @@
                         font-size: 45px;
                         margin-bottom: 1rem;
                     }
+                }
+
+                small {
+                    font-size: 10px;
+                    color: var.$text-oldgreen-500-cayman;
+                    font-weight: 700;
+                }
+
+                span {
+                    font-size: 24px;
+                    color: var.$text-oldgreen-500-cayman;
+                    font-weight: 700;
                 }
 
             }
@@ -164,6 +189,22 @@
                     }
                 }
             }
+
+            .child-bank {
+                color: var.$text-white-cayman;
+                font-weight: 700;
+            }
+            
+        }
+        
+        .text-bottom {
+            z-index: 10;
+            position: absolute;
+            color: white;
+            bottom: 5rem;
+            left: 5rem;
+            border-left: 10px solid #27882B ;
+            padding-left: 8px;
         }
 
     }
@@ -388,6 +429,31 @@
             border-radius: 20px;
             background-color: var.$bg-secondary-100-cayman;
             
+            &.bank {
+                height: 20rem;
+                border-radius: 10px;
+
+                .bank-title {
+                    font-size: 25px;
+                    text-align: center;
+                    font-weight: 800;
+                    color: #0B512A;
+                    text-transform: uppercase;
+
+                    small {
+                        font-size: 10px;
+                    }
+                }
+
+                &.active {
+                    
+                    .bank-title{
+                        color: #FFFFFF !important;
+                    }
+                }
+    
+            }
+            
             &.active {
                 background-color: #406852 ;
                 
@@ -440,6 +506,60 @@
         text-transform: uppercase;
         margin-top: 2rem;
         font-weight: 600;
+        margin-bottom: 0rem !important;
+    }
+
+    .title-bank-protect {
+        font-size: 28px;
+        color: #01471F;
+        
+        @include mix.lg {
+            font-size: 35px;
+        }
+
+        &.crypto {
+         font-size: 25px;   
+         font-weight: 700;
+        }
+    }
+
+    .bank-unparallel {
+        padding-right: 2rem;
+        
+        @include mix.lg {
+            padding-right: 8rem;
+        }
+    }
+
+    .bank-work {
+        li {
+            list-style: decimal;
+            margin-bottom: 1rem;
+
+            span {
+                color: #06633C;
+            }
+        }
+    }
+
+    &.crypto-noncustodial {
+        background: rgba(64, 104, 82, 0.55);
+    }
+
+    &.satoshi-max {
+        background-image: url('../../img/bg-satoshi-max.png');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+
+    &.crypto-fiat {
+        background: #073118;
+        p {
+            color: white;
+        }
     }
 }
 
@@ -466,6 +586,18 @@
             &.bitcoin {
                 background-image: url('../../img/img-18.png');
                 background-position: bottom !important;
+                display: flex;
+                justify-content: center;
+                align-items: end;
+
+                h1 {
+                    text-align: center;
+                    font-weight: 800;
+                    font-size: 48px;
+                    color: var.$text-white-cayman;
+                    padding-bottom: 3rem;
+                    font-family: var.$f-sora;
+                }
             }
 
             &.hedge {
@@ -540,4 +672,147 @@
 }
 /*----------------------------------------------------------
 3. Investment End
+------------------------------------------------------------*/ 
+
+
+/*----------------------------------------------------------
+4. Bank Start
+------------------------------------------------------------*/ 
+.bank-keypoint {
+
+    .crypto {
+        padding: 1rem !important;
+    }
+    
+    .wrapper-img {
+        padding: 0 !important;
+        
+
+        img {
+            height: 33rem;
+            object-fit: cover;
+            object-position: center;
+            width: 100% !important;
+        }
+    }
+
+    .content-keypoint{
+        padding: 0 !important;
+        @include mix.flex-tengah;
+        
+        .bg-keypoint{
+            width: 100%;
+            background-color: #9EB6A4;
+            padding: 1rem 2rem;
+            
+            &.how-works {
+                padding: 3rem 4rem;
+                background: #C8CFCB;
+
+                .list-works {
+                    li {
+                        list-style: decimal;
+                        margin-top: 1rem;
+                        color: rgba(0, 0, 0, 0.54);
+
+                        span {
+                            color: #06633C;
+                        }
+                    }
+                }
+
+                .list-notes {
+                    li {
+                        list-style: inside;
+                        margin-top: 1rem;
+                        color: rgba(0, 0, 0, 0.54);
+                        list-style-position: outside;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bank-protect {
+    .title-text {
+        color: #436151;
+        text-align: center;
+        font-weight: 800;
+    }
+
+    .wrapper-card {
+        .card {
+            background: #D9D9D9;
+            filter: drop-shadow(5px 5px 10px #073118);
+            padding: 1rem;
+
+            p {
+                margin-bottom: 0;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
+/*----------------------------------------------------------
+4. Bank End
+------------------------------------------------------------*/ 
+
+
+/*----------------------------------------------------------
+5. Crypto Start
+------------------------------------------------------------*/ 
+.crypto-tradeoff-secure {
+    background-color: #398460;
+    text-align: center;
+
+    h3 {
+        font-weight: 700;
+    }
+}
+
+.crypto-security {
+    .card-wrapper {
+        padding: 1rem;
+        
+        @include mix.sm{
+            padding: 3rem;
+        }
+
+        .card {
+            background-color: #D9D9D9;
+            filter: drop-shadow(5px 5px 10px #073118);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: start;
+            height: 26rem;
+            
+            @include mix.sm {
+                height: 20rem;
+            }
+
+            @include mix.xl2 {
+                height: 18rem;
+            }
+
+            h4 {
+                font-weight: 700;
+                color: #505050;
+            }
+
+            p {
+                color: rgba(0, 0, 0, 0.54);
+            }
+        }
+    }   
+}
+
+.crypto-all-fiat {
+    background-color: #073118;
+
+}
+/*----------------------------------------------------------
+5. Crypto End
 ------------------------------------------------------------*/ 

@@ -84,9 +84,13 @@
         <div class="row">
             <div class="col-11 mx-auto bg-wrapper bitcoin">
                 <div class="row ">
-                    <div class="col-4 img-wrapper bitcoin"></div>
-                    <div class="col-1 bg-white"></div>
-                    <div class="col-12 col-lg-6 p-5 pe-0">
+                    <div class="d-none d-lg-flex col-5 img-wrapper bitcoin">
+                        <h1>
+                            Bitcoin <br>
+                            Mining Fund
+                        </h1>
+                    </div>
+                    <div class="col-12 col-lg-7 p-5 pe-4">
                         <p class="title">The benefits of investing in our Bitcoin MINING FUND:</p>
                         <div class="d-flex my-4 align-items-start">
                             <span class="pt-2">

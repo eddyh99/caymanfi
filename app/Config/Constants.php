@@ -94,15 +94,41 @@ define('EVENT_PRIORITY_NORMAL', 100);
 define('EVENT_PRIORITY_HIGH', 10);
 
 if ($_SERVER['HTTP_HOST'] == 'localhost') {
-    $addurl = '/'.'caymanfg-new/'; 
+    $addurl = '/'.'caymanfi/'; 
 }else{
     $addurl = '/'; 
 }
 
-$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://'.$_SERVER['HTTP_HOST'].$addurl : 'http://'.$_SERVER['HTTP_HOST'];
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://'.$_SERVER['HTTP_HOST'].$addurl : 'http://'.$_SERVER['HTTP_HOST'].$addurl;
 defined('BASE') || define('BASE',$protocol);
 
 
 define('NAMETITLE', 'Cayman FG');
+define("FEEMEETING", 'EUR 150');
+define("IDGTAG", 'G-Y7SBM0618C');
+define("SATOSHITITLE", 'Satoshi Signal');
+define("URLAPI", 'https://api.pnglobalinternational.com');
+
+// For Email
+define("HOST_MAIL", 'mail.pnglobalinternational.com');
+define("USERNAME_MAIL", 'no-reply@pnglobalinternational.com');
+define("PASS_MAIL", 'Jzg-iF%^HM!x');
+
+// Email DEMO
+define("EMAIL_ONE", 'aripramana574@gmail.com');
+define("EMAIL_TWO", 'ari.pramana@undiksha.ac.id');
+
+// Email Live
+// define("EMAIL_ONE", 'pnglobal.usa@gmail.com');
+// define("EMAIL_TWO", 'robnolfo62@gmail.com');
+
+//For Payment Gateway
+// define("PUBLIC_KEY", 'pk_live_51OHVdwC8KQHLEjXQ88yk2DqcZUQtLIAAWJYumnMwHJC4tQi95Cu514mFtxPD8ezJMOJI6NhTgDy9T5GJJ7dSRyyR00RLGJMXU9');
+// define("SECRET_KEY", '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');
+
+// For Payment Gateway Demo 
+define("PUBLIC_KEY", 'pk_test_51Ph1A4RpjQaOZ7NCQcbJtlXTgcbQm5ulhsm1YgkkfS5LHvHKVZ79p1qP0lOJaxz1XsDMpALi1aUeoxocxD6Can5900DCqNrIHS');
+define("SECRET_KEY", 'sk_test_51Ph1A4RpjQaOZ7NCuVCzdyyy342tNGnlrfnDyox5YirDorblTYDPP7dXK9K4fGqJazDRwyReh9HnLf5MWS7hOUsA00GtKiFgQQ');
+
 
 

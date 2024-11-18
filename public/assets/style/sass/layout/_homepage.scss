@@ -177,6 +177,7 @@
                 h5 {
                     margin-bottom: 2rem;
                     color: var.$text-secondary-100-cayman;
+                    text-align: center;
                 }
 
                 p {
@@ -258,10 +259,13 @@
             flex-direction: column;
             justify-content: space-around;
             .card {
-                // background-color: red;
                 padding: 2rem;
                 margin-bottom: 1rem;
                 box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.25);
+
+                &.email-support {
+                    background-color: #E6E6E6;
+                }
 
                 .discover {
                     font-size: 14px;
@@ -302,7 +306,7 @@
     }
 
     .right-side {
-        padding-left: 0rem;
+        padding-left: 1rem;
         padding-top: 2rem;
         
         @include mix.lg {

@@ -1,8 +1,3 @@
-<?php
-
-use CodeIgniter\Boot;
-?>
-    
 
     <!-- Start of Contact Form -->
     <section class="bg-footer">
@@ -13,8 +8,8 @@ use CodeIgniter\Boot;
                         <img src="<?= base_url() ?>assets/img/logo.png" alt="img">
                     </div>
                     <div class="list mt-4 mt-md-0">
-                       <a href="" class="me-4">CONTACT US</a>
-                       <a href="" class="btn-cayman">CONTACT FORM</a>
+                       <a href="<?= base_url() ?>homepage/contactform?service=<?= base64_encode($title)?>" class="me-4">CONTACT US</a>
+                       <a href="<?= base_url() ?>homepage/contactreferral" class="btn-cayman">CONTACT REFERRAL</a>
                     </div>
                 </div>
                 <div class="address col-12">
@@ -35,8 +30,8 @@ use CodeIgniter\Boot;
                         <div class="links col-12 col-lg-4 order-0 order-lg-1">
                             <div>
                                 <a href="<?= base_url()?>homepage/investment">Investments</a>
-                                <a href="">Bank Services</a>
-                                <a href="">Crypto Services</a>
+                                <a href="<?= base_url()?>homepage/bank">Bank Services</a>
+                                <a href="<?= base_url() ?>homepage/crypto">Crypto Services</a>
                                 <a href="<?= base_url() ?>homepage/about">About CFG & Mission</a>
                             </div>
                         </div>

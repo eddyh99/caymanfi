@@ -52,8 +52,8 @@ input:-moz-placeholder {
     width: 400px;
     border-radius: 10px;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
-    background-color: transparent;
-    border: 2px solid #BFA573;
+    background-color: #CFE4D4;
+    border: 1px solid #1B8036;
     color: #080808;
 }
 
@@ -62,8 +62,8 @@ input:-moz-placeholder {
     width: 100px;
     border-radius: 10px;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
-    background-color: transparent;
-    border: 2px solid #BFA573;
+    background-color: #CFE4D4;
+    border: 1px solid #1B8036;
     color: #080808;
 }
 
@@ -73,8 +73,8 @@ input:-moz-placeholder {
     width: 400px;
     border-radius: 10px;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
-    background-color: transparent;
-    border: 2px solid #BFA573;
+    background-color: #CFE4D4;
+    border: 1px solid #1B8036;
     color: #080808;
 }
 
@@ -84,8 +84,8 @@ input:-moz-placeholder {
     border-radius: 10px;
     padding: 20px 20px;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
-    background-color: transparent;
-    border: 2px solid #BFA573;
+    background-color: #CFE4D4;
+    border: 1px solid #1B8036;
     color: #080808;
 }
 
@@ -95,29 +95,29 @@ input:-moz-placeholder {
     padding: 20px 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
-    background-color: transparent;
-    border: 2px solid #BFA573;
+    background-color: #CFE4D4;
+    border: 1px solid #1B8036;
     color: #080808;
 }
 
 .inp-date {
-    border: 2px solid #BFA573;
+    border: 1px solid #1B8036;
     height: 45px;
     width: 500px;
     border-radius: 8px;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
-    background-color: #F0EADE;
-    color: #000000;
+    background-color: #CFE4D4;
+    color: #080808;
 }
 
 
 .select2-results__option--highlighted {
-    color: white !important;
-    background-color: #BFA573 !important;
+    color: rgb(0, 0, 0) !important;
+    background-color: #77b084 !important;
 }
 
 .select2-container--default .select2-results__option[aria-selected=true] {
-    background-color: #BFA573;
+    background-color: #CFE4D4;
 }
 
 .select2{
@@ -130,8 +130,8 @@ input:-moz-placeholder {
 }
 
 .select2-container--default .select2-selection--single {
-    background-color: #F0EADE !important;
-    border: 2px solid #BFA573 !important;
+    background-color: #CFE4D4 !important;
+    border: 1px solid #1B8036 !important;
     border-radius: 4px !important;
     height: 45px !important;
     max-width: 500px !important;
@@ -147,11 +147,11 @@ input:-moz-placeholder {
 }
 
 .select2-container--open .select2-dropdown--above {
-    background-color: #bc8e37 !important;
+    background-color: #CFE4D4 !important;
 }
 
 .select2-container--default .select2-results__option .select2-results__option {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .select2-container--default .select2-results__group {
@@ -175,21 +175,23 @@ input:-moz-placeholder {
 .contact {
     overflow: hidden;
     .bg-contact-wrap {
-        background-color: #000000;
+        background-color: transparent;
 
         .bg-contact {
-            margin-top: 4rem;
             height: 100%;
             overflow: hidden;
+            position: relative;
 
             .logo {
+                position: absolute;
                 width: 90%;
-                // height: 100%;
                 color: var.$text-white-pnglobal;
-                @include mix.flex-tengah-vertical;
+                display: flex;
+                justify-content: center;
+                margin-top: 2rem;
 
                 img {
-                    width: 40%;
+                    width: 80%;
                 }
 
                 .text {
@@ -206,14 +208,13 @@ input:-moz-placeholder {
             }
 
             .bg-dollar {
-                margin-top: 3rem;
                 height: 100%;
                 overflow: hidden;
                 display: flex;
 
                 img {
-                    width: 100%;
-                    height: auto;
+                    width: auto;
+                    height: 100%;
                     object-fit: cover;
                 }
             }
@@ -224,9 +225,9 @@ input:-moz-placeholder {
 
         .wrapper-field {
             .bg-field {
-                background-color: #F0EADE;
                 padding: 2rem 3rem;
                 border-radius: 15px;
+                border: 2px solid #012912;
             }
         }
     }

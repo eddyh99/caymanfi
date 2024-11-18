@@ -12706,6 +12706,10 @@ p {
   font-family: "Manrope", sans-serif;
 }
 
+.f-sora {
+  font-family: "Sora", sans-serif;
+}
+
 /*----------------------------------------------------------
 2. Class Font End
 ------------------------------------------------------------*/
@@ -13062,7 +13066,7 @@ p {
 }
 .bg-footer .address .links a {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .bg-footer .bottom {
   margin-top: 8rem;
@@ -13244,6 +13248,7 @@ p {
 .financial-future-homepage .card-future .card-wrapper .card h5 {
   margin-bottom: 2rem;
   color: #D9D9D9;
+  text-align: center;
 }
 .financial-future-homepage .card-future .card-wrapper .card p {
   font-weight: 300;
@@ -13302,6 +13307,9 @@ p {
   margin-bottom: 1rem;
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.25);
 }
+.financial-multiple-homepage .content .wrapper-card .card.email-support {
+  background-color: #E6E6E6;
+}
 .financial-multiple-homepage .content .wrapper-card .card .discover {
   font-size: 14px;
   color: #D3732D;
@@ -13334,7 +13342,7 @@ p {
   }
 }
 .financial-journey-homepage .right-side {
-  padding-left: 0rem;
+  padding-left: 1rem;
   padding-top: 2rem;
 }
 @media (min-width: 992px) {
@@ -13369,6 +13377,8 @@ p {
  * 1. Banner General Service
  * 2. Fund Reallocation Service
  * 3. Investment
+ * 4. Bank
+ * 5. Crypto
  *
  */
 /*----------------------------------------------------------
@@ -13409,6 +13419,13 @@ p {
 }
 .banner-service .wrapper-service .img-banner-investment.fund {
   min-height: 100vh !important;
+}
+.banner-service .wrapper-service .img-banner-investment.bank {
+  height: 100vh !important;
+}
+.banner-service .wrapper-service .img-banner-investment.crypto {
+  height: 100vh !important;
+  object-position: right;
 }
 .banner-service .wrapper-service .hero-investment {
   height: 80vh;
@@ -13471,6 +13488,16 @@ p {
     margin-bottom: 1rem;
   }
 }
+.banner-service .wrapper-service .hero-banner-service .center small {
+  font-size: 10px;
+  color: #06633C;
+  font-weight: 700;
+}
+.banner-service .wrapper-service .hero-banner-service .center span {
+  font-size: 24px;
+  color: #06633C;
+  font-weight: 700;
+}
 .banner-service .wrapper-service .hero-banner-service .content-investment {
   width: 100%;
 }
@@ -13532,6 +13559,19 @@ p {
   .banner-service .wrapper-service .hero-banner-service .content-investment .fund span {
     font-size: 40px;
   }
+}
+.banner-service .wrapper-service .hero-banner-service .child-bank {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.banner-service .wrapper-service .text-bottom {
+  z-index: 10;
+  position: absolute;
+  color: white;
+  bottom: 5rem;
+  left: 5rem;
+  border-left: 10px solid #27882B;
+  padding-left: 8px;
 }
 
 /*----------------------------------------------------------
@@ -13735,6 +13775,23 @@ p {
   border-radius: 20px;
   background-color: #DFDFDF;
 }
+.world-invesment .bg-map .card.bank {
+  height: 20rem;
+  border-radius: 10px;
+}
+.world-invesment .bg-map .card.bank .bank-title {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 800;
+  color: #0B512A;
+  text-transform: uppercase;
+}
+.world-invesment .bg-map .card.bank .bank-title small {
+  font-size: 10px;
+}
+.world-invesment .bg-map .card.bank.active .bank-title {
+  color: #FFFFFF !important;
+}
 .world-invesment .bg-map .card.active {
   background-color: #406852;
 }
@@ -13778,6 +13835,50 @@ p {
   text-transform: uppercase;
   margin-top: 2rem;
   font-weight: 600;
+  margin-bottom: 0rem !important;
+}
+.investment-opp .title-bank-protect {
+  font-size: 28px;
+  color: #01471F;
+}
+@media (min-width: 992px) {
+  .investment-opp .title-bank-protect {
+    font-size: 35px;
+  }
+}
+.investment-opp .title-bank-protect.crypto {
+  font-size: 25px;
+  font-weight: 700;
+}
+.investment-opp .bank-unparallel {
+  padding-right: 2rem;
+}
+@media (min-width: 992px) {
+  .investment-opp .bank-unparallel {
+    padding-right: 8rem;
+  }
+}
+.investment-opp .bank-work li {
+  list-style: decimal;
+  margin-bottom: 1rem;
+}
+.investment-opp .bank-work li span {
+  color: #06633C;
+}
+.investment-opp.crypto-noncustodial {
+  background: rgba(64, 104, 82, 0.55);
+}
+.investment-opp.satoshi-max {
+  background-image: url("../../img/bg-satoshi-max.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.investment-opp.crypto-fiat {
+  background: #073118;
+}
+.investment-opp.crypto-fiat p {
+  color: white;
 }
 
 .investment-adv .bg-wrapper {
@@ -13799,6 +13900,17 @@ p {
 .investment-adv .bg-wrapper .img-wrapper.bitcoin {
   background-image: url("../../img/img-18.png");
   background-position: bottom !important;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.investment-adv .bg-wrapper .img-wrapper.bitcoin h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 48px;
+  color: #FFFFFF;
+  padding-bottom: 3rem;
+  font-family: "Sora", sans-serif;
 }
 .investment-adv .bg-wrapper .img-wrapper.hedge {
   background-image: url("../../img/img-21.png");
@@ -13860,6 +13972,123 @@ p {
 3. Investment End
 ------------------------------------------------------------*/
 /*----------------------------------------------------------
+4. Bank Start
+------------------------------------------------------------*/
+.bank-keypoint .crypto {
+  padding: 1rem !important;
+}
+.bank-keypoint .wrapper-img {
+  padding: 0 !important;
+}
+.bank-keypoint .wrapper-img img {
+  height: 33rem;
+  object-fit: cover;
+  object-position: center;
+  width: 100% !important;
+}
+.bank-keypoint .content-keypoint {
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bank-keypoint .content-keypoint .bg-keypoint {
+  width: 100%;
+  background-color: #9EB6A4;
+  padding: 1rem 2rem;
+}
+.bank-keypoint .content-keypoint .bg-keypoint.how-works {
+  padding: 3rem 4rem;
+  background: #C8CFCB;
+}
+.bank-keypoint .content-keypoint .bg-keypoint.how-works .list-works li {
+  list-style: decimal;
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.54);
+}
+.bank-keypoint .content-keypoint .bg-keypoint.how-works .list-works li span {
+  color: #06633C;
+}
+.bank-keypoint .content-keypoint .bg-keypoint.how-works .list-notes li {
+  list-style: inside;
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.54);
+  list-style-position: outside;
+}
+
+.bank-protect .title-text {
+  color: #436151;
+  text-align: center;
+  font-weight: 800;
+}
+.bank-protect .wrapper-card .card {
+  background: #D9D9D9;
+  filter: drop-shadow(5px 5px 10px #073118);
+  padding: 1rem;
+}
+.bank-protect .wrapper-card .card p {
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+/*----------------------------------------------------------
+4. Bank End
+------------------------------------------------------------*/
+/*----------------------------------------------------------
+5. Crypto Start
+------------------------------------------------------------*/
+.crypto-tradeoff-secure {
+  background-color: #398460;
+  text-align: center;
+}
+.crypto-tradeoff-secure h3 {
+  font-weight: 700;
+}
+
+.crypto-security .card-wrapper {
+  padding: 1rem;
+}
+@media (min-width: 567px) {
+  .crypto-security .card-wrapper {
+    padding: 3rem;
+  }
+}
+.crypto-security .card-wrapper .card {
+  background-color: #D9D9D9;
+  filter: drop-shadow(5px 5px 10px #073118);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  height: 26rem;
+}
+@media (min-width: 567px) {
+  .crypto-security .card-wrapper .card {
+    height: 20rem;
+  }
+}
+@media (min-width: 1200px) {
+  .crypto-security .card-wrapper .card {
+    height: 18rem;
+  }
+}
+.crypto-security .card-wrapper .card h4 {
+  font-weight: 700;
+  color: #505050;
+}
+.crypto-security .card-wrapper .card p {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.crypto-all-fiat {
+  background-color: #073118;
+}
+
+/*----------------------------------------------------------
+5. Crypto End
+------------------------------------------------------------*/
+/*----------------------------------------------------------
     File Name  : _contactus.scss
     Desc       : File ini merupakan styling untuk 3 jenis contact us
 
@@ -13908,8 +14137,8 @@ input:-moz-placeholder {
   width: 400px;
   border-radius: 10px;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
-  background-color: transparent;
-  border: 2px solid #BFA573;
+  background-color: #CFE4D4;
+  border: 1px solid #1B8036;
   color: #080808;
 }
 
@@ -13918,8 +14147,8 @@ input:-moz-placeholder {
   width: 100px;
   border-radius: 10px;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
-  background-color: transparent;
-  border: 2px solid #BFA573;
+  background-color: #CFE4D4;
+  border: 1px solid #1B8036;
   color: #080808;
 }
 
@@ -13929,8 +14158,8 @@ input:-moz-placeholder {
   width: 400px;
   border-radius: 10px;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
-  background-color: transparent;
-  border: 2px solid #BFA573;
+  background-color: #CFE4D4;
+  border: 1px solid #1B8036;
   color: #080808;
 }
 
@@ -13940,8 +14169,8 @@ input:-moz-placeholder {
   border-radius: 10px;
   padding: 20px 20px;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
-  background-color: transparent;
-  border: 2px solid #BFA573;
+  background-color: #CFE4D4;
+  border: 1px solid #1B8036;
   color: #080808;
 }
 
@@ -13951,28 +14180,28 @@ input:-moz-placeholder {
   padding: 20px 20px;
   border-radius: 8px;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
-  background-color: transparent;
-  border: 2px solid #BFA573;
+  background-color: #CFE4D4;
+  border: 1px solid #1B8036;
   color: #080808;
 }
 
 .inp-date {
-  border: 2px solid #BFA573;
+  border: 1px solid #1B8036;
   height: 45px;
   width: 500px;
   border-radius: 8px;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
-  background-color: #F0EADE;
-  color: #000000;
+  background-color: #CFE4D4;
+  color: #080808;
 }
 
 .select2-results__option--highlighted {
-  color: white !important;
-  background-color: #BFA573 !important;
+  color: rgb(0, 0, 0) !important;
+  background-color: #77b084 !important;
 }
 
 .select2-container--default .select2-results__option[aria-selected=true] {
-  background-color: #BFA573;
+  background-color: #CFE4D4;
 }
 
 .select2 {
@@ -13985,8 +14214,8 @@ input:-moz-placeholder {
 }
 
 .select2-container--default .select2-selection--single {
-  background-color: #F0EADE !important;
-  border: 2px solid #BFA573 !important;
+  background-color: #CFE4D4 !important;
+  border: 1px solid #1B8036 !important;
   border-radius: 4px !important;
   height: 45px !important;
   max-width: 500px !important;
@@ -14002,11 +14231,11 @@ input:-moz-placeholder {
 }
 
 .select2-container--open .select2-dropdown--above {
-  background-color: #bc8e37 !important;
+  background-color: #CFE4D4 !important;
 }
 
 .select2-container--default .select2-results__option .select2-results__option {
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .select2-container--default .select2-results__group {
@@ -14029,23 +14258,23 @@ input:-moz-placeholder {
   overflow: hidden;
 }
 .contact .bg-contact-wrap {
-  background-color: #000000;
+  background-color: transparent;
 }
 .contact .bg-contact-wrap .bg-contact {
-  margin-top: 4rem;
   height: 100%;
   overflow: hidden;
+  position: relative;
 }
 .contact .bg-contact-wrap .bg-contact .logo {
+  position: absolute;
   width: 90%;
   color: #FFFFFF;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin-top: 2rem;
 }
 .contact .bg-contact-wrap .bg-contact .logo img {
-  width: 40%;
+  width: 80%;
 }
 .contact .bg-contact-wrap .bg-contact .logo .text {
   margin-top: 1rem;
@@ -14059,20 +14288,19 @@ input:-moz-placeholder {
   font-size: 20px;
 }
 .contact .bg-contact-wrap .bg-contact .bg-dollar {
-  margin-top: 3rem;
   height: 100%;
   overflow: hidden;
   display: flex;
 }
 .contact .bg-contact-wrap .bg-contact .bg-dollar img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   object-fit: cover;
 }
 .contact form .wrapper-field .bg-field {
-  background-color: #F0EADE;
   padding: 2rem 3rem;
   border-radius: 15px;
+  border: 2px solid #012912;
 }
 
 /*----------------------------------------------------------
@@ -14353,15 +14581,15 @@ input:-moz-placeholder {
 }
 
 .btn-footer-contactform {
-  background-color: #BFA573;
-  color: #1E1E1E;
+  background-color: #1B8036;
+  color: #FFFFFF;
   padding: 0.8rem 1rem !important;
   border-radius: 10px;
   font-size: 13px;
   font-weight: 500;
 }
 .btn-footer-contactform:hover {
-  background-color: #BFA573;
+  background-color: #1B8036;
   color: #FFFFFF;
   box-shadow: 0px 4px 4px 0px #E8D9BD;
   font-weight: 700;

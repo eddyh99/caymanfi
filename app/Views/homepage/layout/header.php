@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Odor+Mean+Chey&display=swap" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
 
     <!-- Icon Font Awesome -->
@@ -36,7 +36,7 @@
 </head>
 <body>
     <!-- Start of Navbar -->
-    <nav class="navbar navbar-expand-xxl">
+    <nav class="navbar <?= (@$navbar == 'relative') ? 'position-relative' : ''  ?>  navbar-expand-xxl">
         <div class="container">
             <a class="navbar-logo" href="<?= base_url()?>">
                 <img class="logo" src="<?= base_url()?>assets/img/logo.png" alt="logo">
@@ -51,21 +51,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item me-0 me-xl-2">
-                        <a class="nav-link" aria-current="page" href="<?=base_url()?>?type=satoshi">Bank Services</a>
+                        <a class="nav-link" aria-current="page" href="<?=base_url()?>homepage/bank">Bank Services</a>
                     </li>
                     <li class="nav-item me-0 me-xl-2">
-                        <a class="nav-link" aria-current="page" href="<?=base_url()?>?type=productservice">Investements</a>
+                        <a class="nav-link" aria-current="page" href="<?=base_url()?>homepage/investment">Investements</a>
                     </li>
                     <li class="nav-item me-0 me-xl-2">
-                        <a class="nav-link" aria-current="page" href="<?=base_url()?>?type=training">Crypto Services</a>
+                        <a class="nav-link" aria-current="page" href="<?=base_url()?>homepage/crypto">Crypto Services</a>
                     </li>
-                    <!-- <li class="nav-item me-0 me-xl-2">
-                        <a class="nav-link" href="<?=base_url()?>?type=service">Complementary Service</a>
-                    </li> -->
                     <li class="nav-item me-0 me-lg-5 d-flex align-items-center justify-content-center">
                         <a class="btn-nav-white" href="<?= base_url() ?>homepage/funds_reallocation">Funds Reallocation</a>
                     </li>
-                    <li class="nav-item me-0 me-lg-3 d-flex align-items-center justify-content-center">
+                    <li class="nav-item mt-2 mt-lg-0 me-0 me-lg-3 d-flex align-items-center justify-content-center">
                         <a class="btn-nav-login" href="<?= base_url() ?>">Login</a>
                     </li>
                     <li class="nav-item mt-2 mt-lg-0 d-flex align-items-center justify-content-center">

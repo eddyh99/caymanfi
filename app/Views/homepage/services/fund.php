@@ -182,7 +182,7 @@
                         <h4>
                             Contact us today to discover how our bespoke services can meet your specific needs and provide you with the peace of mind that your assets are in the best possible hands.
                         </h4>
-                        <a href="" class="btn-cayman px-3 px-lg-5 mt-5">BOOK A CONSULTATION</a>
+                        <a href="<?= base_url() ?>homepage/bookingconsultation?service=<?= base64_encode($title)?>" class="btn-cayman px-3 px-lg-5 mt-5">BOOK A CONSULTATION</a>
                     </div>
                 </div>
                 <div class="col order-0 order-lg-1 wrapper-img d-flex justify-content-center justify-content-lg-end">
