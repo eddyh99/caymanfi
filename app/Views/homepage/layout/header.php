@@ -63,10 +63,10 @@
                         <a class="btn-nav-white" href="<?= base_url() ?>homepage/funds_reallocation">Funds Reallocation</a>
                     </li>
                     <li class="nav-item mt-2 mt-lg-0 me-0 me-lg-3 d-flex align-items-center justify-content-center">
-                        <a class="btn-nav-login" href="<?= base_url() ?>">Login</a>
+                        <a class="btn-nav-login" href="<?= base_url() ?>auth/login">Login</a>
                     </li>
                     <li class="nav-item mt-2 mt-lg-0 d-flex align-items-center justify-content-center">
-                        <a class="btn-nav-register" href="<?= base_url() ?>homepage/contactreferral">Sign Up</a>
+                        <a class="btn-nav-register" href="<?= base_url() ?>">Sign Up</a>
                     </li>
                 </ul>
             </div>
