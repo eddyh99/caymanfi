@@ -28,7 +28,16 @@
     .wrapper-banner-homepage {
         display: flex;
         min-height: 100vh !important;
-        
+
+        .filter-auth {
+            position: absolute;
+            background: rgba(217, 217, 217, 0.25);
+            height: 100%;
+            width: 100%;
+            z-index: 2;
+        }
+
+
         video {
             @include mix.video-banner-center;
         }
@@ -42,6 +51,7 @@
             z-index: 2;
             text-align: start;
             width: 100%;
+
 
             .content {
                 h1{
@@ -79,6 +89,96 @@
                     @include mix.md {
                         padding-right: 10rem;
                         font-size: 16px;
+                    }
+                }
+            }
+
+            &.auth {
+                align-items: center;
+              
+        
+            }
+
+            .title-auth {
+                border-radius: 99999999px;
+                background: rgba(217, 217, 217, 0.75);
+                padding: 1rem 2rem;
+                color: rgba(17, 82, 45, 1);
+                text-align: center;
+            }
+            
+            .bg-auth{
+                border-radius: 25px;
+                background: rgba(217, 217, 217, 0.75);
+                padding: 1rem 2rem;
+
+                .form-auth {
+                    @include mix.flex-tengah-vertical;
+    
+                    .wrapper-input {
+                        width: 90%;
+                        margin: auto;
+    
+                        label {
+                            color: #11522D;
+                            font-size: 24px;
+                        }
+    
+                        input {
+                            border-radius: 25px;
+                            border: 2px solid #406852;
+                            background: #FFFFFF;
+                            padding: 0.6rem;
+                            width: 100%;
+    
+                        }
+                    }
+    
+                }
+                .wrapper-checkbox {
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    gap: 8px;
+                    padding: 0.5rem 2rem;
+
+                    input[type='checkbox'] {
+                        accent-color: #2e7d32; /* Change this to match your theme color */
+                        width: 16px;
+                        height: 16px;
+                        cursor: pointer;
+                    }
+
+                    label {
+                        color: #1b5e20; /* Dark green color */
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+                }
+
+                .wrapper-button {
+                    display: flex;
+                    justify-content: center;
+
+                    button {
+                        border-radius: 99999999px;
+                        text-transform: uppercase
+                    }
+                }
+
+                .wrapper-anotherpage {
+                    @include mix.flex-tengah;
+
+                    
+                    span {
+                        font-size: 12px;
+                        font-weight: 300;
+                    }
+
+                    a {
+                        color: #073118;
+                        font-size: 12px;
+                        font-weight: 700;
                     }
                 }
             }
@@ -121,6 +221,22 @@
                     }
                 }
 
+            }
+        }
+
+        &.auth {
+            min-height: 100% !important;
+
+            video {
+                min-height: 100% !important;
+            }
+
+            .hero-banner-homepage{ 
+                padding: 2rem;
+                
+                @include mix.lg {
+                    padding: 10rem;
+                }
             }
         }
     }

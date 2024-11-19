@@ -9,7 +9,7 @@
                     </div>
                     <div class="list mt-4 mt-md-0">
                        <a href="<?= base_url() ?>homepage/contactform?service=<?= base64_encode($title)?>" class="me-4">CONTACT US</a>
-                       <a href="<?= base_url() ?>homepage/contactreferral" class="btn-cayman">CONTACT REFERRAL</a>
+                       <a href="<?= base_url() ?>homepage/contactreferral" class="btn-cayman">CONTACT FORM</a>
                     </div>
                 </div>
                 <div class="address col-12">
@@ -106,11 +106,6 @@
         }
     ?>
 
-    <?php
-        if (@isset($extragsap)) {
-            echo view(@$extragsap);
-        }
-    ?>
 
 </body>
 </html>
