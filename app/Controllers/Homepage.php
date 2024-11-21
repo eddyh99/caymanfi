@@ -208,31 +208,31 @@ class Homepage extends BaseController
         $rules = $this->validate([
             'fname'     => [
                 'label'     => 'Name',
-                'rules'     => 'trim|required'
+                'rules'     => 'required'
             ],
             'lname'     => [
                 'label'     => 'Last Name',
-                'rules'     => 'trim|required'
+                'rules'     => 'required'
             ],
             'email.*'   => [
                 'label'     => 'Email',
-                'rules'     => 'trim|valid_email'
+                'rules'     => 'valid_email'
             ],
             'whatsapp'  => [
                 'label'     => 'Whatsapp',
-                'rules'     => 'trim|required'
+                'rules'     => 'required'
             ],
             'desc'      => [
                 'label'     => 'Description',
-                'rules'     => 'trim|required'
+                'rules'     => 'required'
             ],
             'timezone'      => [
                 'label'     => 'Timezone', 
-                'rules'     => 'trim|required'
+                'rules'     => 'required'
             ],
             'schedule'      => [
                 'label'     => 'Schedule', 
-                'rules'     => 'trim|required'
+                'rules'     => 'required'
             ],
             'subject'      => [
                 'label'     => 'Subject', 

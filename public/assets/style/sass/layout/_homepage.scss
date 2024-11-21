@@ -135,6 +135,17 @@
                     }
     
                 }
+
+                .form-group-pass {
+                    .icon-pass-login {
+                        font-size: 18px;
+                        position: absolute;
+                        display: block;
+                        right: 45px;
+                        bottom: 11px;
+                    }
+                }
+
                 .wrapper-checkbox {
                     display: flex;
                     align-items: center;

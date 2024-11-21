@@ -49,7 +49,7 @@
                 <span class="bank-title">
                     SATOSHI SIGNAL <br>
                     <small>
-                        POWERED
+                        POWERED BY
                     </small>
                     <br>
                     PN GLOBAL

@@ -29,7 +29,46 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?= base_url() ?>assets/style/css/main.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
 
 </head>
 <body>
-    
+      <!-- Start of Navbar -->
+      <nav class="navbar position-relative navbar-expand-xxl">
+        <div class="container">
+            <a class="navbar-logo" href="<?= base_url()?>">
+                <img class="logo" src="<?= base_url()?>assets/img/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="openbtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-0 me-xl-2">
+                        <a class="nav-link" aria-current="page" href="<?=base_url()?>homepage/bank">Bank Services</a>
+                    </li>
+                    <li class="nav-item me-0 me-xl-2">
+                        <a class="nav-link" aria-current="page" href="<?=base_url()?>homepage/investment">Investements</a>
+                    </li>
+                    <li class="nav-item me-0 me-xl-2">
+                        <a class="nav-link" aria-current="page" href="<?=base_url()?>homepage/crypto">Crypto Services</a>
+                    </li>
+                    <li class="nav-item me-0 me-lg-5 d-flex align-items-center justify-content-center">
+                        <a class="btn-nav-white" href="<?= base_url() ?>homepage/funds_reallocation">Funds Reallocation</a>
+                    </li>
+                    <li class="nav-item mt-2 mt-lg-0 me-0 me-lg-3 d-flex align-items-center justify-content-center">
+                        <a class="btn-nav-login" href="<?= base_url() ?>auth/login">Login</a>
+                    </li>
+                    <li class="nav-item mt-2 mt-lg-0 d-flex align-items-center justify-content-center">
+                        <a class="btn-nav-register" href="<?= base_url()?>auth/signup">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Navbar -->

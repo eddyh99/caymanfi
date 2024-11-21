@@ -62,7 +62,7 @@
                     Invest with us and watch your savings grow.
                 </p>
                 <p>
-                    By entrusting your money to Cayman Financial Group and PN GLOBAL, you will have access to a world of investment opportunities. Imagine having a team of experts working alongside you, carefully selecting the best opportunities in global markets and3 in the BTC market. Thanks to our strong partnership and proven investment strategy, you can benefit from guaranteed and consistent returns, without having to worry about managing your portfolio yourself. In addition, you will have complete transparency on your operations and can count on a personalized and flexible service, tailored to your specific needs. Investing with us means choosing security, profitability and the peace of mind of knowing that your financial future is in good hands.
+                    By entrusting your money to Cayman Financial Group and PN GLOBAL, you will have access to a world of investment opportunities. Imagine having a team of experts working alongside you, carefully selecting the best opportunities in global markets and in the BTC market. Thanks to our strong partnership and proven investment strategy, you can benefit from guaranteed and consistent returns, without having to worry about managing your portfolio yourself. In addition, you will have complete transparency on your operations and can count on a personalized and flexible service, tailored to your specific needs. Investing with us means choosing security, profitability and the peace of mind of knowing that your financial future is in good hands.
                 </p>
                 <p class="head mb-0">What sets us apart?</p>
                 <p>

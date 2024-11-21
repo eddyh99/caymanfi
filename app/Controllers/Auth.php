@@ -23,4 +23,14 @@ class Auth extends BaseController
 
         return view('auth/layout/wrapper', $mdata);
 	}
+
+	public function  signup(){
+        $mdata = [
+            'title'     => 'Signup - ' . NAMETITLE,
+            'content'   => 'auth/register',
+            'extra'     => 'auth/js/_js_login',
+        ];
+
+        return view('auth/layout/wrapper', $mdata);
+	}
 }

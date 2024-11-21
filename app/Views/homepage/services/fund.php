@@ -24,7 +24,7 @@
             <div class="col-12 col-lg-6 left-side">
                 <h3 class="f-manrope">Fund Reallocation: A Safe and Legal Solution</h3>
                 <p class="f-manrope">
-                    Cayman Financial Group offers a sophisticated fund reallocation service designed to optimize asset transfers across international borders, leveraging the unique legal and regulatory environment of the Cayman Islands. Unlike traditional international transfers, which often involve cumbersome processes and significant costs, our service provides a streamlined approach that prioritizes efficiency and client confidentiality.
+                    Cayman Financial Group offers a sophisticated fund reallocation service designed to optimize asset transfers across domestic borders, leveraging the unique legal and regulatory environment of the Cayman Islands. Unlike traditional international transfers, which often involve cumbersome processes and significant costs, our service provides a streamlined approach that prioritizes efficiency and client confidentiality.
                 </p>
                 <p class="f-manrope">
                     Our ability to reallocate funds is anchored in the advantageous laws and regulations governing business and offshore banking in the Cayman Islands. These regulatory frameworks allow us to execute transactions in a way that is both legally compliant and highly secure, ensuring that our clients' financial activities remain discreet and protected from unnecessary exposure

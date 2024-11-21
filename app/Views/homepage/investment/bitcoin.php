@@ -202,7 +202,7 @@
                         The security of a protected investment
                     </li>
                     <li class="fw-bold">
-                        Flexibility: Scale your investment over time. Start with a minimum of $ 9,000 and increase your allocation as desired.
+                        Flexibility: Scale your investment over time. Start with a minimum of $ 9,000 and increase in multiples of $ 9,000.
                     </li>
                 </ul>
                 

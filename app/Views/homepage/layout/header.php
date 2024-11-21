@@ -66,7 +66,7 @@
                         <a class="btn-nav-login" href="<?= base_url() ?>auth/login">Login</a>
                     </li>
                     <li class="nav-item mt-2 mt-lg-0 d-flex align-items-center justify-content-center">
-                        <a class="btn-nav-register" href="<?= base_url() ?>">Sign Up</a>
+                        <a class="btn-nav-register" href="<?= base_url() ?>auth/signup">Sign Up</a>
                     </li>
                 </ul>
             </div>

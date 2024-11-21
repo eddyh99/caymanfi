@@ -8,7 +8,7 @@
                     <h1 class="f-inter" style="margin-bottom: 0px;">
                         SATOSHI SIGNAL 
                     </h1>
-                    <small>POWRED</small> <br>
+                    <small>POWRED BY</small> <br>
                     <span>PN GLOBAL</span>
                 </div>
             </div>

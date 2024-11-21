@@ -13205,6 +13205,13 @@ p {
   padding: 0.6rem;
   width: 100%;
 }
+.banner-homepage .wrapper-banner-homepage .hero-banner-homepage .bg-auth .form-group-pass .icon-pass-login {
+  font-size: 18px;
+  position: absolute;
+  display: block;
+  right: 45px;
+  bottom: 11px;
+}
 .banner-homepage .wrapper-banner-homepage .hero-banner-homepage .bg-auth .wrapper-checkbox {
   display: flex;
   align-items: center;
