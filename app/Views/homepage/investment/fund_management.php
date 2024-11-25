@@ -120,17 +120,16 @@
                     <br>
                     Just sign up for the offer and deposit the capital you have decided on.
                     <br>
-                    You will receive dividends every six months and, upon maturity, \the invested capital will be returned to you in full.
+                    You will receive dividends every six months and, upon maturity, the invested capital will be returned to you in full.
                     <br>
                     All profits generated will be credited directly to your
                 </h5>
                 <h5 class="account">
                     Cayman investment account
                 </h5>
-                <a href="" class="btn-cayman px-3 px-lg-5 mt-5 text-uppercase">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#investmentCalculatorModal" class="btn-cayman px-3 px-lg-5 mt-5 text-uppercase">
                     calculate your profit
                 </a>
-
             </div>
         </div>
     </div>
@@ -170,61 +169,5 @@
  </section>
 <!-- End of Why Choose -->
 
-<?php echo view('homepage/investment/bottom_map')?>
 
-<!-- Start of Investment World -->
-<!-- <section class="world-invesment">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="text-flight">Let Your Dreams Take Flight with our  investments</h2>
-        </div>
-    </div>
-    <div class="bg-map row row-cols-4 px-5">
-        <div class="col">
-            <div class="card active">
-                <h1 class="persen">
-                    15%
-                </h1>
-                <span class="apy">
-                    APY
-                </span>
-            </div>
-        </div>
-        
-        <div class="col">
-            <div class="card">
-                <h1 class="persen">
-                    12%
-                </h1>
-                <span class="apy">
-                    APY
-                </span>
-                <a href="<?php echo base_url() . "homepage/investment/" . base64_encode("botcoin")?>" class="btn-map">SEE MORE</a>
-            </div>
-        </div>
-        
-        <div class="col">
-            <div class="card">
-                <h1 class="persen">
-                    10%
-                </h1>
-                <span class="apy">
-                    APY
-                </span>
-                <a href="<?php echo base_url() . "homepage/investment/" . base64_encode("hedge")?>" class="btn-map">SEE MORE</a>
-            </div>
-        </div>
-        
-        <div class="col">
-            <div class="card comingsoon">
-                <span class="apy">
-                    COMMING <br>
-                    SOON
-                </span>
-                <a class="btn-map disabled">SEE MORE</a>
-            </div>
-        </div>
-        
-    </div>
-</section> -->
-<!-- End of Investment World -->
+<?php echo view('homepage/investment/bottom_map')?>

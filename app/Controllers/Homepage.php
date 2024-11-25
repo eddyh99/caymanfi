@@ -65,18 +65,21 @@ class Homepage extends BaseController
                 'title'     => 'Investment Fund Management - ' . NAMETITLE,
                 'content'   => 'homepage/investment/fund_management',
                 'map'       => 'funds',
+                'extra'     => 'homepage/investment/js/_js_investment'
             ];
         }else if($segment == "bitcoin"){
             $mdata = [
                 'title'     => 'Investment Bitcoin - ' . NAMETITLE,
                 'content'   => 'homepage/investment/bitcoin',
-                'map'       => 'bitcoin'
+                'map'       => 'bitcoin',
+                'extra'     => 'homepage/investment/js/_js_investment'
             ];
         }else if($segment == "hedge"){
             $mdata = [
                 'title'     => 'Investment Hedge Funds - ' . NAMETITLE,
                 'content'   => 'homepage/investment/hedge',
-                'map'       => 'hedge'
+                'map'       => 'hedge',
+                'extra'     => 'homepage/investment/js/_js_investment'
             ];
         }
 

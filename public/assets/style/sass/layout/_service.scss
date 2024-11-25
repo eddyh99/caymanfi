@@ -670,6 +670,140 @@
         }
     }
 }
+
+#investmentCalculatorModal {
+    // background-color: red;
+
+    .modal-dialog {
+        .modal-content {
+            background-color: #92A59D !important;
+
+            .modal-header {
+                position: relative;
+                width: 100%;
+                justify-content: center !important;
+                padding: 2rem 6rem;
+                border-bottom: none;
+                
+                @include mix.xss{
+                    padding: 2rem 0rem;
+                }
+
+                .modal-title {
+                    margin-top: 0rem;
+                    text-transform: uppercase;
+                    color: #012912;
+                }
+
+                .btn {
+                    position: absolute;
+                    right: 2rem;
+                }
+            }
+
+            .modal-body {
+                .investment-summary {
+                    padding: 2rem 0rem;
+                    
+                    @include mix.lg {
+                        padding: 2rem 4rem;
+                    }
+
+                    h6 {
+                        color: #000000;
+                    }
+
+                    .bg-left {
+                        background-color: rgba(131, 233, 107, 0.75);
+                        border-radius: 10px 10px 0px 0px;
+                        padding: 2rem;
+                        @include mix.flex-tengah-vertical;
+                        @include mix.sm {
+                            border-radius: 10px 0px 0px 10px;
+                        }
+
+                        .title {
+                            font-size: 32px !important;
+                        }
+                    }
+
+                    .bg-center {
+                        background-color: rgba(207, 228, 212, 1);
+                        padding: 1rem;
+                        @include mix.flex-tengah;
+                        @include mix.sm {
+                            padding: 2rem;
+                        }
+
+                        .btn-calculate {
+                            background-color: rgba(27, 128, 54, 1);
+                            height: 3rem;
+                            color: #FFFFFF;
+                        }
+                        
+                        input {
+                            background-color: rgba(27, 128, 54, 1);
+                            margin: 0rem 0.1rem;
+                            height: 3rem;
+                            color: #FFFFFF;
+                        }
+                    }
+                    
+                    .bg-right {
+                        background-color: rgba(131, 233, 107, 0.75);
+                        border-radius: 0px 0px 10px 10px;
+                        padding: 2rem;
+                        @include mix.flex-tengah-vertical;
+                        @include mix.sm {
+                            border-radius: 0px 10px 10px 0px;
+                        }
+
+                        .total-payment {
+                            font-size: 32px;
+                        }
+                    }
+                }
+
+                .investment-detail {
+                    padding: 0rem 0rem 4rem 0rem;
+                    
+                    @include mix.lg {
+                        padding: 0rem 4rem 4rem 4rem;
+                    }
+
+                    .details-card {
+                        background-color: rgba(131, 233, 107, 0.75);
+                        border-radius: 10px;
+                        margin-top: 0.5rem;
+                        
+                        .left{
+                            border-right: 10px solid #CFE4D4;
+                            padding: 1rem;
+
+                            .title {
+                                font-size: 14px;
+                                color: #000000;
+                                text-transform: uppercase;
+                            }
+                        }
+                        .right{
+                            border-left: 10px solid #CFE4D4;
+                            padding: 1rem;
+                            @include mix.flex-tengah;
+
+                            .title {
+                                font-size: 14px;
+                                color: #000000;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 /*----------------------------------------------------------
 3. Investment End
 ------------------------------------------------------------*/ 

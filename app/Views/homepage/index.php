@@ -21,7 +21,7 @@
                     <p>
                         We are at the forefront of financial innovation, including leveraging the potential of the cryptocurrency market to offer cutting-edge solutions. With over $500 billion in annual transactions, our regulated institutions are a testament to our strength and dedication to excellence.
                     </p>
-                    <a href="" class="btn-banner-homepage mt-2">Open an account</a>
+                    <a href="<?= base_url() ?>auth/signup" class="btn-banner-homepage mt-2">Open an account</a>
                 </div>
             </div>
 
@@ -189,7 +189,7 @@
                 <p>
                     At Cayman Financial Group, we offer top-tier financial services designed to meet the unique needs of each client. Before proceeding with account or wallet openings, we conduct a thorough selection process to identify clients who best align with our service model. We understand that not everyone may possess the necessary characteristics to fully benefit from the solutions provided by Cayman Financial Group. However, for those who demonstrate genuine interest and the right qualifications, we offer an exclusive and personalized financial experience. We are here to guide and support those seeking a high-quality financial partnership, utilizing our expertise and resources to ensure their financial success. If you are ready to take the first step toward a more secure and rewarding financial future, contact us today to begin the selection process and discover how Cayman Financial Group can help you achieve your goals.
                 </p>
-                <a href="" class="btn-cayman my-5">START YOUR FINANCIAL JOURNEY</a>
+                <a href="<?= base_url() ?>homepage/bookingconsultation?service=<?= base64_encode($title)?>" class="btn-cayman my-5">START YOUR FINANCIAL JOURNEY</a>
             </div>
         </div>
     </div>

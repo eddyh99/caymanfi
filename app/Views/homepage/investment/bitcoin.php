@@ -167,7 +167,7 @@
                 <h5 class="account">
                     Cayman investment account
                 </h5>
-                <a href="" class="btn-cayman px-3 px-lg-5 mt-5 text-uppercase">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#investmentCalculatorModal" class="btn-cayman px-3 px-lg-5 mt-5 text-uppercase">
                     calculate your profit
                 </a>
 
