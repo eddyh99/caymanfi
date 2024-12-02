@@ -4,9 +4,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-link d-flex flex-column flex-md-row align-items-start justify-content-between">
-                    <div class="logo-footer">
+                    <a class="logo-footer" href="<?= base_url()?>">
                         <img src="<?= base_url() ?>assets/img/logo.png" alt="img">
-                    </div>
+                    </a>
                     <div class="list mt-4 mt-md-0">
                        <a class="me-4">CONTACT US</a>
                        <a href="<?= base_url() ?>homepage/contactform?service=<?= base64_encode($title)?>" class="btn-cayman">CONTACT FORM</a>
