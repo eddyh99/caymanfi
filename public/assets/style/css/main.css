@@ -14730,6 +14730,96 @@ input:-moz-placeholder {
 2. About Commitment End
 ------------------------------------------------------------*/
 /*----------------------------------------------------------
+    File Name  : _user.scss
+    Desc       : File ini merupakan styling untuk member user
+
+------------------------------------------------------------*/
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Member User
+ */
+/*----------------------------------------------------------
+1. Member User Start
+------------------------------------------------------------*/
+.user-layout {
+  overflow-x: hidden;
+}
+.user-layout .user-header .bg-header {
+  background-color: #CFE4D4;
+  padding: 1rem;
+}
+.user-layout .user-header .bg-header .menu {
+  position: absolute;
+  right: 1rem;
+}
+.user-layout .user-menus {
+  margin: 3rem 0rem;
+}
+.user-layout .user-menus .divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.user-layout .user-menus .divider .line {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #1B8036;
+}
+.user-layout .user-menus .divider .text {
+  font-size: 12px;
+  color: #1B8036;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.user-layout .user-menus .card-investment {
+  margin-top: 1rem;
+}
+.user-layout .user-menus .card-investment .bg-investment {
+  background-image: url("../../img/bg-user-card-investment.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 7rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.user-layout .user-menus .card-investment .bg-investment .amount {
+  font-size: 24px;
+  font-weight: 700;
+}
+.user-layout .user-menus .card-encrypted .bg-encrypted {
+  background-color: #CFE4D4;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.user-layout .user-menus .card-encrypted .bg-encrypted .name {
+  font-size: 14px;
+  color: #1B8036;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+.user-layout .user-menus .all-btn .to-investment {
+  display: flex;
+  justify-content: end;
+  margin-top: 7rem;
+}
+.user-layout .user-menus .all-btn .to-encrypted {
+  display: flex;
+  justify-content: end;
+  margin-top: 10rem;
+}
+.user-layout .user-menus .all-btn .to-debit {
+  display: flex;
+  justify-content: end;
+  margin-top: 15rem;
+}
+
+/*----------------------------------------------------------
+1. Member User End
+------------------------------------------------------------*/
+/*----------------------------------------------------------
     File Name  : _navbar.scss
     Desc       : File ini merupakan styling untuk 
                  Component Button yang akan dipakai berulang

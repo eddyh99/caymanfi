@@ -1,0 +1,115 @@
+/*----------------------------------------------------------
+    File Name  : _user.scss
+    Desc       : File ini merupakan styling untuk member user
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Member User
+ */
+
+ @use '../abstracts/variables' as var;
+ @use '../abstracts/mixins' as mix;
+
+ 
+/*----------------------------------------------------------
+1. Member User Start
+------------------------------------------------------------*/ 
+.user-layout {
+    overflow-x: hidden;
+    .user-header {
+
+        .bg-header {
+            background-color: #CFE4D4;
+            padding: 1rem;
+        
+            
+            .menu {
+                position: absolute;
+                right: 1rem;
+            }
+        }
+    }
+
+    .user-menus {
+        margin: 3rem 0rem;
+        .divider {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            gap: 10px;
+
+            .line {
+                flex: 1;
+                border: none;
+                border-top: 1px solid #1B8036; 
+            }
+
+            .text {
+                font-size: 12px; 
+                color: #1B8036; 
+                white-space: nowrap;
+                font-weight: 700; 
+            }
+        }
+
+        .card-investment {
+            margin-top: 1rem;
+            .bg-investment {
+                background-image: url('../../img/bg-user-card-investment.png');
+                background-position: right;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 7rem;
+                padding: 2rem;
+                border-radius: 10px;
+
+                .amount {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .card-encrypted {
+            .bg-encrypted {
+                background-color: #CFE4D4;
+                padding: 2rem;
+                border-radius: 10px;
+
+                .name {
+                    font-size: 14px;
+                    color: #1B8036;
+                    font-weight: 700;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+
+        .all-btn {
+            .to-investment {
+                display: flex;
+                justify-content: end;
+                margin-top: 7rem;
+            }
+
+            .to-encrypted {
+                display: flex;
+                justify-content: end;
+                margin-top: 10rem;
+            }
+
+            .to-debit {
+                display: flex;
+                justify-content: end;
+                margin-top: 15rem;
+            }
+        }
+
+    }
+}
+/*----------------------------------------------------------
+1. Member User End
+------------------------------------------------------------*/ 
